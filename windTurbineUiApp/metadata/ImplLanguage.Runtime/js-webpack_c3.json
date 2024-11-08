@@ -1,0 +1,6 @@
+{
+  "name": "js-webpack_c3",
+  "libraries": [
+    "npm react-heatmap-grid@0.8.1"
+  ]
+}
