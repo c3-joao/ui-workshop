@@ -1,18 +1,128 @@
 {
-    "type": "UiSdlConnected<UiSdlForm>",
-    "component": {
-      "id": "WindTurbine.AddTurbineForm",
-      "wrapWithMetadataId": true,
-      "hideFooterButtons": true,
-      "clearOnCancel": true,
-      "dataSpec": {
-        "fieldSets": {
-          "type": "[UiSdlFormFieldSet]",
-          "value": [
-            
-          ]
-        }
+  "type": "UiSdlConnected<UiSdlForm>",
+  "component": {
+    "id": "WindTurbine.AddTurbineForm",
+    "wrapWithMetadataId": true,
+    "hideFooterButtons": true,
+    "submitDataSpec" : {
+      "dataType" : "WindTurbine",
+      "actionName" : "create",
+      "submitArgument" : "spec"
+    },
+    "clearOnCancel": true,
+    "dataSpec": {
+      "fieldSets": {
+        "type": "[UiSdlFormFieldSet]",
+        "value": [
+          {
+            "type": "UiSdlFormFieldSet",
+            "fields": [
+              {
+                "inputElement": {
+                  "type": "UiSdlTextInput",
+                  "fluid": false,
+                  "submittable": false,
+                  "wrapWithMetadataId": false,
+                  "debounceTime": 0
+                },
+                "fieldName": "name",
+                "required": true,
+                "label": "Name",
+                "disabled": false,
+                "hidden": false
+              },
+              {
+                "inputElement": {
+                  "dataSpec": {
+                    "dataType": {
+                      "typeName": "WindTurbine"
+                    },
+                    "actionName": "fetch",
+                    "args": {
+                      "spec": {
+                        "include": "manufacturer"
+                      }
+                    },
+                    "dataPath": "objs",
+                    "valueField": "manufacturer",
+                    "displayField": "manufacturer",
+                    "disableDataRequestOnFirstRender": false
+                  },
+                  "search": false,
+                  "fluid": false,
+                  "serverSearch": false,
+                  "searchOperator": "CONTAINS",
+                  "clear": true,
+                  "multiple": false,
+                  "submittable": false,
+                  "wrapWithMetadataId": false,
+                  "type": "UiSdlSingleSearch"
+                },
+                "fieldName": "manufacturer",
+                "required": true,
+                "label": "Manufacturer",
+                "disabled": false,
+                "hidden": false
+              },
+              {
+                "inputElement": {
+                  "type": "UiSdlNumberInput",
+                  "fluid": false,
+                  "wrapWithMetadataId": false,
+                  "max": "1000"
+                },
+                "fieldName": "power",
+                "label": "Max Power",
+                "disabled": false,
+                "hidden": false
+              },
+              {
+                "inputElement": {
+                  "type": "UiSdlDateTimeInput",
+                  "fluid": false,
+                  "allowKeyboardEdit": true,
+                  "showTimePicker": false,
+                  "wrapWithMetadataId": false
+                },
+                "fieldName": "dateAdded",
+                "required": true,
+                "label": "Installation Date",
+                "disabled": false,
+                "hidden": false
+              },
+              {
+                "inputElement" : {
+                  "type" : "UiSdlRadioButtonGroup",
+                  "radioButtons" : [ 
+                    {
+                      "value" : "SYSTEM_REBOOT",
+                      "label" : "System Reboot"
+                    }, 
+                    {
+                      "value" : "DIAGNOSTICS_COMPLETE",
+                      "label" : "Diagnostics Complete"
+                    }, 
+                    {
+                      "value" : "PLANNED_MAINTENANCE",
+                      "label" : "Planned Maintenance"
+                    }, 
+                    {
+                      "value" : "UNPLANNED_MAINTENANCE",
+                      "label" : "Unplanned Maintenance"
+                    }, 
+                    {
+                      "value" : "SYSTEM_OVERLOAD",
+                      "label" : "System Overload"
+                    } 
+                  ]
+                },
+                "label" : "Most Recent Event",
+                "fieldName" : "status"
+              }
+            ]
+          }
+        ]
       }
     }
   }
-  
+}
