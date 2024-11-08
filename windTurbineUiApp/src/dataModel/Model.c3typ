@@ -1,0 +1,9 @@
+entity type Model schema name 'MDL' {
+  manufacturer: Manufacturer
+  modelName: string
+  capacityKw: float
+  rotorDiameterMeters: float
+  bladeType: string enum ('Flat', 'Twisted', 'Elliptical')
+  releaseDate: date
+  productionStatus: string enum ('Available', 'Discontinued')
+}

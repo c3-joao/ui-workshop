@@ -1,0 +1,6 @@
+entity type Manufacturer schema name 'MNFTR' {
+    name: string
+    countryOfOrigin: Country
+    incorporationDate: date
+    website: string
+}

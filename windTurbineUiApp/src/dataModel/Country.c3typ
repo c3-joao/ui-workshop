@@ -1,0 +1,4 @@
+entity type Country schema name 'CNTRY' {
+    name: string
+    code: string
+}

@@ -1,0 +1,19 @@
+id,manufacturer,modelName,capacityKw,rotorDiameterMeters,bladeType,releaseDate,productionStatus
+1,1,V90-1.8 MW,1800,90,Elliptical,2004,Available
+2,1,V100-2.0 MW,2000,100,Elliptical,2005,Available
+3,1,V136-4.2 MW,4200,136,Elliptical,2018,Available
+4,1,V164-9.5 MW,9500,164,Elliptical,2014,Available
+5,2,SG 1.4-132,1400,132,Elliptical,2017,Available
+6,2,SG 3.4-132,3400,132,Elliptical,2017,Available
+7,2,SG 5.8-170,5800,170,Elliptical,2020,Available
+8,3,GE 1.5sle,1500,77,Flat,2002,Discontinued
+9,3,GE 2.75-132,2750,132,Elliptical,2016,Available
+10,3,Haliade-X 12 MW,12000,220,Elliptical,2019,Available
+11,4,N60/1300,1300,60,Elliptical,2001,Discontinued
+12,4,N70/1500,1500,70,Elliptical,2004,Discontinued
+13,4,N80/2500,2500,80,Elliptical,2007,Discontinued
+14,4,N60/1545,1545,60,Elliptical,2015,Available
+15,5,GW 82/1500,1500,82,Elliptical,2008,Discontinued
+16,5,GW 93/1500,1500,93,Elliptical,2011,Available
+17,5,GW 125/2500,2500,125,Elliptical,2013,Available
+18,5,GW 140/3200,3200,140,Elliptical,2015,Available

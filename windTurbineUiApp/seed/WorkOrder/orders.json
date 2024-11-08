@@ -1,0 +1,155 @@
+[
+    {
+      "title": "Routine Maintenance",
+      "description": "Monthly inspection and cleaning of the turbine blades.",
+      "priority": "Low",
+      "workOrderStatus": "Open",
+      "plannedStartDate": "2024-11-01",
+      "plannedEndDate": "2024-11-02",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Blade Repair",
+      "description": "Repair of a damaged blade on turbine 3.",
+      "priority": "High",
+      "workOrderStatus": "In Progress",
+      "plannedStartDate": "2024-11-05",
+      "plannedEndDate": "2024-11-10",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Software Update",
+      "description": "Apply the latest firmware updates to the turbine controllers.",
+      "priority": "Medium",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-10-20",
+      "plannedEndDate": "2024-10-22",
+      "actualCompletionDate": "2024-10-21"
+    },
+    {
+      "title": "Annual Inspection",
+      "description": "Full inspection and evaluation of the wind turbine performance.",
+      "priority": "High",
+      "workOrderStatus": "Open",
+      "plannedStartDate": "2024-12-01",
+      "plannedEndDate": "2024-12-03",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Generator Replacement",
+      "description": "Replace the faulty generator in turbine 5.",
+      "priority": "High",
+      "workOrderStatus": "Open",
+      "plannedStartDate": "2024-11-10",
+      "plannedEndDate": "2024-11-12",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Lubrication Service",
+      "description": "Lubricate the moving parts of the wind turbine.",
+      "priority": "Medium",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-10-15",
+      "plannedEndDate": "2024-10-16",
+      "actualCompletionDate": "2024-10-16"
+    },
+    {
+      "title": "Rotor Blade Cleaning",
+      "description": "Cleaning and debris removal from the rotor blades.",
+      "priority": "Low",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-10-30",
+      "plannedEndDate": "2024-10-31",
+      "actualCompletionDate": "2024-10-31"
+    },
+    {
+      "title": "Control System Diagnostics",
+      "description": "Run diagnostics on the control system to ensure optimal performance.",
+      "priority": "Medium",
+      "workOrderStatus": "In Progress",
+      "plannedStartDate": "2024-11-03",
+      "plannedEndDate": "2024-11-06",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Tower Inspection",
+      "description": "Visual inspection of the turbine tower structure.",
+      "priority": "Low",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-10-10",
+      "plannedEndDate": "2024-10-11",
+      "actualCompletionDate": "2024-10-11"
+    },
+    {
+      "title": "Wind Sensor Calibration",
+      "description": "Calibration of wind sensors to ensure accurate readings.",
+      "priority": "Medium",
+      "workOrderStatus": "Open",
+      "plannedStartDate": "2024-11-08",
+      "plannedEndDate": "2024-11-09",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Transmission Line Repair",
+      "description": "Repair of the transmission line connecting the turbine to the grid.",
+      "priority": "High",
+      "workOrderStatus": "In Progress",
+      "plannedStartDate": "2024-11-06",
+      "plannedEndDate": "2024-11-07",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Hydraulic System Check",
+      "description": "Check and replace any hydraulic fluid leaks.",
+      "priority": "Low",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-10-05",
+      "plannedEndDate": "2024-10-06",
+      "actualCompletionDate": "2024-10-06"
+    },
+    {
+      "title": "Blade Pitch Adjustment",
+      "description": "Adjust the pitch of the turbine blades for optimized wind capture.",
+      "priority": "Medium",
+      "workOrderStatus": "In Progress",
+      "plannedStartDate": "2024-11-02",
+      "plannedEndDate": "2024-11-04",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Electrical Wiring Check",
+      "description": "Inspection of electrical wiring to prevent potential faults.",
+      "priority": "Low",
+      "workOrderStatus": "Open",
+      "plannedStartDate": "2024-11-12",
+      "plannedEndDate": "2024-11-14",
+      "actualCompletionDate": null
+    },
+    {
+      "title": "Turbine Commissioning",
+      "description": "Commissioning of new turbine 15 at the offshore site.",
+      "priority": "High",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-09-15",
+      "plannedEndDate": "2024-09-18",
+      "actualCompletionDate": "2024-09-17"
+    },
+    {
+      "title": "Safety Equipment Inspection",
+      "description": "Inspection of safety equipment and PPE at the wind farm site.",
+      "priority": "Medium",
+      "workOrderStatus": "Completed",
+      "plannedStartDate": "2024-10-25",
+      "plannedEndDate": "2024-10-26",
+      "actualCompletionDate": "2024-10-26"
+    },
+    {
+      "title": "Environmental Impact Assessment",
+      "description": "Performing an assessment of environmental impact for turbine 16.",
+      "priority": "Low",
+      "workOrderStatus": "Open",
+      "plannedStartDate": "2024-11-15",
+      "plannedEndDate": "2024-11-17",
+      "actualCompletionDate": null
+    }
+]
