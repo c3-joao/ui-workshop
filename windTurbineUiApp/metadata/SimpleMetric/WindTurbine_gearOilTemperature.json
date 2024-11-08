@@ -1,6 +1,6 @@
 {
-    "id": "WindTurbine_rotationSpeed",
-    "name": "rotationSpeed",
+    "id": "WindTurbine_gearOilTemeprature",
+    "name": "gearOilTemperature",
     "srcType": "WindTurbine",
 
     "tsDecl": {
@@ -9,6 +9,6 @@
         "treatment": "RATE",
         "overlapHandling": "AVG",
         "rollupFunc": "AVG",
-        "value": "generatorRotationSpeed"
+        "value": "gearOilTemperature"
     }
 }
