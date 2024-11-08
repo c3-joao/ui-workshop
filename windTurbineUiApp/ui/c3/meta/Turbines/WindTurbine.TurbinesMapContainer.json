@@ -1,0 +1,14 @@
+{
+    "type": "UiSdlConnected<UiSdlLayoutContainer>",
+    "component": {
+      "children": [
+        [
+          {
+            "id": "WindTurbine.TurbinesMap",
+            "width": 100
+          }
+        ]
+      ]
+    }
+  }
+  

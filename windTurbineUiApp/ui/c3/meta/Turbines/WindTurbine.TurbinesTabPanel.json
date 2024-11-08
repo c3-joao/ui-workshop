@@ -1,0 +1,17 @@
+{
+    "type": "UiSdlConnected<UiSdlTabPanel>",
+    "component": {
+      "id": "WindTurbine.TurbinesTabPanel",
+      "wrapWithMetadataId": true,
+      "activeTab": "WindTurbine.TurbinesMapContainer",
+      "tabComponents": [
+        {
+          "id": "WindTurbine.TurbinesMapContainer",
+          "title": "Map"
+        }
+      ],
+      "primaryActionButtonTitle": "Add Turbine",
+      "secondaryActionButtonTitle": "Delete Turbine"
+    }
+  }
+  

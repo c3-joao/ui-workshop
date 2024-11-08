@@ -6,11 +6,11 @@
   "component": {
     "children": [
       {
-        "id": "WindTurbine.TurbinesTable"
+        "id": "WindTurbine.TurbinesTabPanel"
       }
       ,
       {
-        "id":"WindTurbine.TurbinesModal"
+        "id":"WindTurbine.AddTurbineModal"
       }
     ]
   }

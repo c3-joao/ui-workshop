@@ -1,0 +1,48 @@
+{
+    "type": "UiSdlConnected<UiSdlModal>",
+    "component": {
+      "id": "WindTurbine.AddTurbineModal",
+      "wrapWithMetadataId": true,
+      "size": "MEDIUM",
+      "header": {
+        "text": "Create Turbine"
+      },
+      "modalType": {
+        "type": "UiSdlTwoButtonModal",
+        "primaryButtonLabel": "Retrain",
+        "primaryButtonStyle": "primary",
+        "secondaryButtonLabel": "Cancel",
+        "secondaryButtonStyle": "secondary"
+      },
+      "children": [
+        {
+            "id": "WindTurbine.AddTurbineForm"
+        }
+      ]
+    },
+    "effectTriggers": [
+      {
+        "trigger": "WindTurbine.TurbinesTabPanel.ACTION_CLICK_PRIMARY",
+        "effectType": "UiSdlEpicShowUiSdlModal",
+        "payload": {
+          "modal": "WindTurbine.AddTurbineModal"
+        }
+      },
+      /* {
+        "trigger": "NavyStr.ModelDetailRetrainModal.PRIMARY_BUTTON_CLICK",
+        "effectType": "UiSdlEpicRetrainModel"
+      }, */
+      {
+        "trigger": "WindTurbine.AddTurbineModal.MODAL_CLOSE",
+        "actions": [
+          {
+            "type": "WindTurbine.AddTurbineForm.FORM_CANCEL"
+          },
+          {
+            "type": "WindTurbine.AddTurbineForm.FORM_RESET"
+          }
+        ]
+      }
+    ]
+  }
+  

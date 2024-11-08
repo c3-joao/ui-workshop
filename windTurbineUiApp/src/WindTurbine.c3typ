@@ -55,6 +55,11 @@ entity type WindTurbine mixes MlSubject schema name 'WNDT' {
    */
   events:       [WindTurbineEvent](turbineId)
 
+  /**
+   * The {@link WindTurbineEvent}s belonging to the wind turbine.
+   */
+  lastEvent:    WindTurbineEvent stored calc events[0]
+
   
 
     /**

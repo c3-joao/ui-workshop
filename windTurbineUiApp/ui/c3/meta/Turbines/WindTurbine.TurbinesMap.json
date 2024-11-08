@@ -1,0 +1,74 @@
+{
+    "type": "UiSdlConnected<UiSdlMap>",
+    "component": {
+      "dataSpec": {
+        "type": "UiSdlMapDataSpec",
+        "disableDataRequestOnFirstRender": false,
+        "markerOpacity": 1,
+        "dataType": "WindTurbine",
+        "latitude": {
+          "type": "UiSdlFieldBasedDataSpecSetting",
+          "dataRecordMapping": {
+            "dependingField": "latitude"
+          },
+          "fieldName": "latitude"
+        },
+        "longitude": {
+          "type": "UiSdlFieldBasedDataSpecSetting",
+          "dataRecordMapping": {
+            "dependingField": "longitude"
+          },
+          "fieldName": "longitude"
+        },
+        "tooltipAdditionalFields": [
+          {
+            "fieldName": "name",
+            "label": "Name"
+          },
+          {
+            "fieldName": "country",
+            "label": "Country"
+          },
+          {
+            "fieldName": "city",
+            "label": "City"
+          },
+          {
+            "fieldName": "manufacturer",
+            "label": "manufacturer"
+          }
+        ],
+        "markerColor": {
+          "fieldName": "lastEvent.event_code",
+          "colorConfigurationStrategy": {
+            "type": "UiSdlMapMarkerCategoricalColorSetting",
+            "categoryColors": [
+              {"label": "SYSTEM_REBOOT", "color": "#BAB056"},
+              {"label": "DIAGNOSTICS_COMPLETE", "color": "#B073FF"},
+              {"label": "PLANNED_MAINTENANCE", "color": "#2266F0"},
+              {"label": "UNPLANNED_MAINTENANCE", "color": "#49BFA9"},
+              {"label": "SYSTEM_OVERLOAD", "color": "#49BF"}
+            ]
+          }
+        }
+      },
+      "centering": {
+        "type": "UiSdlMapFixedCentering",
+        "latitude": 37.48196,
+        "longitude": -122.224
+      },
+      "defaultMarkerShape": "CIRCLE",
+      "height": 450,
+      "defaultMarkerColor": "#415b9f",
+      "zoom": {
+        "type": "UiSdlMapAutoZoom"
+      },
+      "mapStyle": "THEMED",
+      "hideControls": false,
+      "wrapWithMetadataId": false,
+      "type": "UiSdlMap",
+      "id": "WindTurbine.TurbinesMap",
+      "triggersRegistered": true
+    }
+  }
+  

@@ -1,0 +1,18 @@
+{
+    "type": "UiSdlConnected<UiSdlForm>",
+    "component": {
+      "id": "WindTurbine.AddTurbineForm",
+      "wrapWithMetadataId": true,
+      "hideFooterButtons": true,
+      "clearOnCancel": true,
+      "dataSpec": {
+        "fieldSets": {
+          "type": "[UiSdlFormFieldSet]",
+          "value": [
+            
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,8 +1,4 @@
 targetModuleName,targetPageName,name,urlPath
-WindTurbine,HomePage,/,/
-WindTurbine,HomePage,/windturbine/home,/windturbine/home
+WindTurbine,Turbines,/,/
 WindTurbine,Turbines,/windturbine/turbines,/windturbine/turbines
-WindTurbine,Turbine,/windturbine/turbine,/windturbine/turbine
-WindTurbine,Turbine,/windturbine/turbine/{{pageId}},/windturbine/turbine/{{pageId}}
-WindTurbine,Measurement,/windturbine/measurement/{{pageId}},/windturbine/measurement/{{pageId}}
-WindTurbine,Measurements,/windturbine/measurements,/windturbine/measurements
+WindTurbine,WorkOrders,/windturbine/workorders,/windturbine/workorders
