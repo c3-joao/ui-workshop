@@ -1,0 +1,19 @@
+{
+    "type": "UiSdlConnected<UiSdlLayoutSidePanel>",
+    "applicationStateRef": {
+      "id":"WindTurbine.UiSdlApplicationStateWT"
+  },
+    "component": {
+        "children": [
+            {
+                "id": "WindTurbine.TurbineEvents"
+              },
+              {
+                "id": "WindTurbine.TurbineChart"
+              },
+              {
+                "id": "WindTurbine.TurbineDeleteEventConfirmationModal"
+              }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "i18n": {
+    "locales": [
+      {
+        "id": "en"
+      }
+    ]
+  },
+  "style": {
+    "theme": {
+      "id": "C3DefaultLight",
+      "themeCategory": "Light"
+    },
+    "density": {
+      "id": "C3DefaultClassicDensity",
+      "densityCategory": "Classic"
+    }
+  }
+}

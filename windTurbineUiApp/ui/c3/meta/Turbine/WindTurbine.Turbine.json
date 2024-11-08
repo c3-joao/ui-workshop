@@ -1,0 +1,11 @@
+{
+  "type": "UiSdlLayoutNavMenu",
+  "navMenu": {
+    "id": "WindTurbine.NavMenu"
+  },
+  "children": [
+    {
+      "id": "WindTurbine.TurbineLayout"
+    }
+  ]
+}

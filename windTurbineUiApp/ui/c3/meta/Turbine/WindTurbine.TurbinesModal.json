@@ -1,0 +1,18 @@
+{
+  "type": "UiSdlConnected<UiSdlModal>",
+  "component": {
+    "size": "FULLSCREEN",
+    "header": {
+      "text": "Average Rotation Speed"
+    },
+    "modalType": {
+      "type": "UiSdlOneButtonModal",
+      "primaryButtonLabel": "Close"
+    },
+    "children": [
+      {
+        "id": "WindTurbine.TurbinesModalPlot"
+      }
+    ]
+  }
+}

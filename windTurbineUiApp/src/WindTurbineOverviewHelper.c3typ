@@ -1,0 +1,7 @@
+type WindTurbineOverviewHelper {
+  /**
+   * Returns {@link WindTurbine} count, sum of all {@link WindTurbineEvent} alerts,
+   * and sum of {@link WindTurbineMeasurement} counts.
+   */
+  get: function(): json js-server
+}

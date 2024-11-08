@@ -1,0 +1,63 @@
+{
+  "type": "UiSdlConnected<UiSdlDataGrid>",
+  "applicationStateRef": {
+    "id": "WindTurbine.UiSdlApplicationStateWT"
+  },
+  "component": {
+    "header": {
+      "title": "All Turbine Measurements"
+    },
+    "paginationConfig": {
+      "pageSize": 10,
+      "pagination": true
+    },
+    "reorderableColumns": false,
+    "filterBar": true,
+    "dataSpec": {
+      "dataType": "WindTurbineMeasurement",
+      "contextVars": {
+        "turbineId": {
+          "type": "UiSdlPageParam",
+          "path": "pageId"
+        }
+      },
+      "columnFields": [
+        {
+          "fieldName": "id",
+          "label": "id",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "timestamp",
+          "label": "timestamp",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "activePower",
+          "label": "activePower",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "generatorRotationSpeed",
+          "label": "generatorRotationSpeed",
+          "sortable": true,
+          "searchable": true
+        }
+      ]
+    }
+  },
+  "effectTriggers": [
+
+    {
+      "trigger": "WindTurbine.MeasurementTable.ROW_CLICK",
+      "effectType": "UiSdlEpicUpdateChart",
+      "payload": {
+        "chart": "WindTurbine.MeasurementChart"
+      },
+      "payloadStrategy": "MERGE"
+    }
+  ]
+}

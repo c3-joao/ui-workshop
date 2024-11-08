@@ -1,0 +1,11 @@
+{
+  "type": "UiSdlLayoutSidePanel",
+  "children": [
+    [
+      {
+        "id": "WindTurbine.EventPieChart",
+        "width": 50
+      }
+    ]
+  ]
+}

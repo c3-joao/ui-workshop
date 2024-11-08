@@ -1,0 +1,13 @@
+{
+  "type": "UiSdlConnected<UiSdlLayoutSidePanel>",
+  "component": {
+    "children": [
+      {
+        "id":"WindTurbine.TurbinesTable"
+      },
+      {
+        "id": "WindTurbine.EventPieChart"
+      }
+    ]
+  }
+}

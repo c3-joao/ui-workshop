@@ -1,0 +1,70 @@
+{
+  "type":"UiSdlConnected<UiSdlCategoricalLineBarChart>",
+  "component": {
+    "header": {
+      "title":"WindTurbine.EventChart.title"
+    },
+    "chartLayout":"HORIZONTAL",
+    "backgroundStyle": "HORIZONTAL_LINES",
+    "height": 323,
+    "stackBars": true,
+    "zoomEnabled": false,
+    "legend": {
+      "legendLayout":"HORIZONTAL",
+      "legendPosition": "BELOW_CHART"
+    },
+    "grid": {
+      "top": 20
+    },
+    "tooltipValuesDecimalPrecision": 0,
+    "xAxis": {
+      "name":"WindTurbine.EventChart.xAxis.name"
+    },
+    "yAxis": {
+      "name":"WindTurbine.EventChart.yAxis.name"
+    },
+    "dataSpec": {
+      "dataType":"WindTurbine",
+      "limit": 5,
+      "orderOnAggregateYAxisFields": true,
+      "xAxisField": {
+        "fieldName":"city",
+        "sortDirection": "descending",
+        "sortedBasedOn": "Y values"
+
+      },
+      "yAxisFields": [
+        {
+          "fieldName":"unplannedMaintenanceEvents",
+          "legendLabel":"Unplanned maintenance",
+          "visualizationType": {
+            "type":"UiSdlLineBarChartBarVisualization",
+            "width": 10
+          },
+          "color" : "#B073FF",
+          "aggregation":"Sum"
+        },
+        {
+          "fieldName":"rebootEvents",
+          "legendLabel":"System reboot",
+          "visualizationType": {
+            "type":"UiSdlLineBarChartBarVisualization",
+            "width": 10
+          },
+          "color" : "#2693DD",
+          "aggregation":"Sum"
+        },
+        {
+          "fieldName":"plannedMaintenanceEvents",
+          "legendLabel":"Planned maintenance",
+          "visualizationType": {
+            "type":"UiSdlLineBarChartBarVisualization",
+            "width": 10
+          },
+          "color" : "#2271E7",
+          "aggregation":"Sum"
+        }
+      ]
+    }
+  }
+}

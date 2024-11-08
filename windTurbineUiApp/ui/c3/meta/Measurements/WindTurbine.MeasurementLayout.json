@@ -1,0 +1,16 @@
+{
+    "type": "UiSdlConnected<UiSdlLayoutSidePanel>",
+    "applicationStateRef": {
+      "id":"WindTurbine.UiSdlApplicationStateWT"
+  },
+    "component": {
+        "children": [
+          {
+            "id": "WindTurbine.MeasurementTable"
+        },
+        {
+            "id": "WindTurbine.MeasurementChart"
+        }
+        ]
+    }
+}

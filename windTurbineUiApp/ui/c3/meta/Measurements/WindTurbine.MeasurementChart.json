@@ -1,0 +1,48 @@
+{
+  "type": "UiSdlConnected<UiSdlTimeseriesLineBarChart>",
+  "component": {
+    "header": {
+      "title": "Average Rotation Speed"
+    },
+    "legend": {
+      "legendPosition": "BELOW_CHART"
+    },
+    "zoomEnabled": true,
+    "dataZoom": true,
+    "dataSelection": true,
+    "xAxis": {
+      "type": "UiSdlTimeseriesLineBarChartXAxisConfig",
+      "name": "Rotation Speed"
+    },
+    "yAxis": {
+      "name": "Power",
+      "units": true
+    },
+    "dataSpec": {
+      "dataType": "WindTurbine",
+      "contextVars": {
+        "id": {
+          "type": "UiSdlPageParam",
+          "path": "pageId"
+        }
+      },
+      "yAxisFields": [
+        {
+          "visualizationType": {
+            "type": "UiSdlTimeseriesLineBarChartLineVisualization",
+            "lineStyle": "Solid",
+            "itemStyle": "CIRCLE"
+          },
+          "entityId": "${id}",
+          "metricName": "rotationSpeed",
+          "bindings": {
+            "value": {
+              "origin": 0,
+              "bound": 100
+            }
+          }
+        }
+      ]
+    }
+  }
+}

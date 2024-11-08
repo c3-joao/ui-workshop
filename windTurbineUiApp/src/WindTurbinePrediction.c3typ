@@ -1,0 +1,8 @@
+entity type WindTurbinePrediction {
+    
+  subject: !WindTurbine
+  model: !MlModel
+  timestamp: !datetime
+  status: !string
+  value: !double
+}

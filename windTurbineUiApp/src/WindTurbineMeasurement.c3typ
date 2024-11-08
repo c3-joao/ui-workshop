@@ -1,0 +1,15 @@
+@db(datastore='kv', 
+    partitionKeyField='turbineId',
+    persistenceOrder='timestamp',
+    persistDuplicates=false,
+    compactType=true,
+    shortIdReservationRange=100000)
+entity type WindTurbineMeasurement mixes Obj schema name 'WT_BLB_MSRMNT' {
+
+  gearOilTemperature:     double
+  turbineId:              WindTurbine
+  generatorRotationSpeed: double
+  timestamp:              datetime
+  activePower:            double
+
+}
