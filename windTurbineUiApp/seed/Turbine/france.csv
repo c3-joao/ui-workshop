@@ -1,0 +1,11 @@
+id, name, latitude, longitude, operationalStatus, model
+FR001,"Grande Tour",49.1234,2.4567,Operational,3
+FR002,"Puissant Vent",49.1256,2.4570,Operational,3
+FR003,"Haut Energie",49.1278,2.4582,Operational,3
+FR004,"Fort Brise",49.1300,2.4595,Operational,3
+FR005,"Blanc Aube",49.1322,2.4608,Operational,3
+FR006,"Sage Montagne",49.1388,2.4647,Operational,3
+FR007,"Noble Mer",49.1410,2.4660,Operational,3
+FR008,"Doux Soleil",49.1344,2.4621,Operational,3
+FR009,"WindTurbine_7",49.1366,2.4634,Decommissioned,1
+FR010,"Fier Ciel",49.1432,2.4673,Decommissioned,1

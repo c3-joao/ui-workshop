@@ -1,0 +1,11 @@
+id,name,latitude,longitude,operationalStatus,model
+USE001,"Steady Gust",40.5001,-74.2501,Operational,14
+USE002,"High Point",40.5003,-74.2503,Operational,14
+USE003,"Clear Breeze",40.5005,-74.2505,Operational,14
+USE004,"Blue Horizon",40.5007,-74.2507,Operational,14
+USE005,"Grand Sunrise",40.5009,-74.2510,Operational,14
+USE006,"Silent Hill",40.5011,-74.2513,Operational,14
+USE007,"Calm Sea",40.5013,-74.2515,Operational,14
+USE008,"Bright Sky",40.5015,-74.2517,Operational,14
+USE009,"Mighty Ocean",40.5017,-74.2519,Decommissioned,13
+USE010,"Golden Dawn",40.5019,-74.2521,Decommissioned,13

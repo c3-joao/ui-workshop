@@ -1,0 +1,11 @@
+id,name,latitude,longitude,operationalStatus,model
+PT001,"Grande Sol",39.5001,-8.6667,Operational,7
+PT002,"Valente Vento",39.5002,-8.6671,Operational,7
+PT003,"Sabia Energia",39.5003,-8.6675,Operational,7
+PT004,"Rapida Brisa",39.5004,-8.6680,Operational,7
+PT005,"Branca Torre",39.5005,-8.6683,Operational,7
+PT006,"Forte Mar",39.5006,-8.6687,Operational,7
+PT007,"Doce Horizonte",39.5007,-8.6691,Operational,7
+PT008,"Nobre Ceu",39.5008,-8.6695,Operational,7
+PT009,"Poderosa Montanha",39.5009,-8.6699,Decommissioned,12
+PT010,"Alto Pico",39.5010,-8.6703,Decommissioned,12

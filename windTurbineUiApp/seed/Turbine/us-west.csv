@@ -1,0 +1,11 @@
+id,name,latitude,longitude,operationalStatus, model
+USW001,"Strong Gale",34.5001,-118.2501,Operational,9
+USW002,"Mighty Wind",34.5003,-118.2503,Operational,9
+USW003,"Golden Sun",34.5005,-118.2505,Operational,9
+USW004,"Skyward Horizon",34.5007,-118.2507,Operational,9
+USW005,"Swift Breeze",34.5009,-118.2510,Operational,9
+USW006,"White Mountain",34.5011,-118.2513,Operational,9
+USW007,"Quiet Peak",34.5013,-118.2515,Operational,9
+USW008,"Blue Valley",34.5015,-118.2517,Operational,9
+USW009,"Grand Field",34.5017,-118.2519,Decommissioned,8
+USW010,"Clear Cloud",34.5019,-118.2521,Decommissioned,8

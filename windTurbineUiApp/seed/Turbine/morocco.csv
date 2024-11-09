@@ -1,0 +1,11 @@
+id,name,latitude,longitude,operationalStatus, model
+MR001,"Grand Soleil",31.5001,-9.6667,Operational,9
+MR002,"Fier Vent",31.5002,-9.6671,Operational,9
+MR003,"Sage Energie",31.5003,-9.6675,Operational,9
+MR004,"Rapide Brise",31.5004,-9.6680,Operational,9
+MR005,"Blanc Tour",31.5005,-9.6683,Operational,9
+MR006,"Fort Mer",31.5006,-9.6687,Operational,9
+MR007,"Doux Horizon",31.5007,-9.6691,Operational,9
+MR008,"Noble Ciel",31.5008,-9.6695,Operational,9
+MR009,"Puissant Montagne",31.5009,-9.6699,Decommissioned,8
+MR010,"Haut Pic",31.5010,-9.6703,Decommissioned,8

@@ -1,12 +1,9 @@
 entity type Turbine schema name 'TRBN' {
-    serialNumber: string
     name: string
     latitude: float
     longitude: float
     operationalStatus: string enum ('Operational', 'Decommissioned')
     isInMaintenance: boolean
-    nextScheduledMaintenanceDate: datetime
-    manufacturer: Manufacturer
     model: Model
     workOrders: [WorkOrder](windturbine)
 }
