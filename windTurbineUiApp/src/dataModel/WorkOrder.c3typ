@@ -1,6 +1,6 @@
 entity type WorkOrder schema name 'WRKDR' {
   title: string
-  description: clob
+  description: string
   priority: string enum ('Low', 'Medium', 'High')
   workOrderStatus: string enum ('Open', 'In Progress', 'Completed')
   plannedStartDate: date

@@ -1,0 +1,32 @@
+{
+  "type": "UiSdlConnected<UiSdlDataGrid>",
+
+  "component": {
+    "header": {
+      "title": "Work Orders"
+    },
+    "paginationConfig": {
+      "pageSize": 10,
+      "pagination": true
+    },
+    "reorderableColumns": true,
+    "filterBar": true,
+    "dataSpec": {
+      "dataType": "WorkOrder",
+      "columnFields": [
+        {
+          "fieldName": "title",
+          "label": "Title",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "description",
+          "label": "Description",
+          "sortable": true,
+          "searchable": true
+        }
+      ]
+    }
+  }
+}

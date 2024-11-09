@@ -5,7 +5,7 @@
     },
     "children": [
       {
-        "id": "WindTurbine.MeasurementsLayout"
+        "id": "WindTurbine.WorkOrdersLayout"
       }
     ]
   }

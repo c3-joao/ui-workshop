@@ -1,0 +1,11 @@
+{
+    "type" : "UiSdlConnected<UiSdlLayoutSidePanel>",
+    "component" : {
+      "leftSidePanel" : {
+        "id" : "WindTurbine.WorkOrdersFilterPanel"
+      },
+      "children" : [ {
+        "id" : "WindowTurbine.WorkOrdersGrid"
+      } ]
+    }
+  }
