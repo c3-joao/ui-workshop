@@ -33,7 +33,7 @@ export function storeEventRecordAction(id, obj) {
 export function heatMapFilterReducer(state, action) {
   const appStateId = action.payload.componentId;
   state = setConfigInApplicationState(appStateId, state, ['turbineFilter'], action.payload.obj.turbineFilter);
-  return setConfigInApplicationState(appStateId, state, ['eventFilter'], action.payload.obj.turbineFilter);
+  return setConfigInApplicationState(appStateId, state, ['eventFilter'], action.payload.obj.eventFilter);
 }
 
 export function filterHeatMapAction(id, obj) {
