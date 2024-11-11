@@ -6,7 +6,8 @@
       "workOrderStatus": "Open",
       "plannedStartDate": "2024-11-01",
       "plannedEndDate": "2024-11-02",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "FR001"}
     },
     {
       "title": "Blade Repair",
@@ -15,7 +16,8 @@
       "workOrderStatus": "In Progress",
       "plannedStartDate": "2024-11-05",
       "plannedEndDate": "2024-11-10",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "FR001"}
     },
     {
       "title": "Software Update",
@@ -24,7 +26,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-10-20",
       "plannedEndDate": "2024-10-22",
-      "actualCompletionDate": "2024-10-21"
+      "actualCompletionDate": "2024-10-21",
+      "windturbine": {"id": "MR001"}
     },
     {
       "title": "Annual Inspection",
@@ -33,7 +36,8 @@
       "workOrderStatus": "Open",
       "plannedStartDate": "2024-12-01",
       "plannedEndDate": "2024-12-03",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "MR001"}
     },
     {
       "title": "Generator Replacement",
@@ -42,7 +46,8 @@
       "workOrderStatus": "Open",
       "plannedStartDate": "2024-11-10",
       "plannedEndDate": "2024-11-12",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "MR001"}
     },
     {
       "title": "Lubrication Service",
@@ -51,7 +56,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-10-15",
       "plannedEndDate": "2024-10-16",
-      "actualCompletionDate": "2024-10-16"
+      "actualCompletionDate": "2024-10-16",
+      "windturbine": {"id": "PT001"}
     },
     {
       "title": "Rotor Blade Cleaning",
@@ -60,7 +66,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-10-30",
       "plannedEndDate": "2024-10-31",
-      "actualCompletionDate": "2024-10-31"
+      "actualCompletionDate": "2024-10-31",
+      "windturbine": {"id": "PT001"}
     },
     {
       "title": "Control System Diagnostics",
@@ -69,7 +76,8 @@
       "workOrderStatus": "In Progress",
       "plannedStartDate": "2024-11-03",
       "plannedEndDate": "2024-11-06",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "PT001"}
     },
     {
       "title": "Tower Inspection",
@@ -78,7 +86,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-10-10",
       "plannedEndDate": "2024-10-11",
-      "actualCompletionDate": "2024-10-11"
+      "actualCompletionDate": "2024-10-11",
+      "windturbine": {"id": "PT001"}
     },
     {
       "title": "Wind Sensor Calibration",
@@ -87,7 +96,8 @@
       "workOrderStatus": "Open",
       "plannedStartDate": "2024-11-08",
       "plannedEndDate": "2024-11-09",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "USE001"}
     },
     {
       "title": "Transmission Line Repair",
@@ -96,7 +106,8 @@
       "workOrderStatus": "In Progress",
       "plannedStartDate": "2024-11-06",
       "plannedEndDate": "2024-11-07",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "USE001"}
     },
     {
       "title": "Hydraulic System Check",
@@ -105,7 +116,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-10-05",
       "plannedEndDate": "2024-10-06",
-      "actualCompletionDate": "2024-10-06"
+      "actualCompletionDate": "2024-10-06",
+      "windturbine": {"id": "USE001"}
     },
     {
       "title": "Blade Pitch Adjustment",
@@ -114,7 +126,8 @@
       "workOrderStatus": "In Progress",
       "plannedStartDate": "2024-11-02",
       "plannedEndDate": "2024-11-04",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "USE001"}
     },
     {
       "title": "Electrical Wiring Check",
@@ -123,7 +136,8 @@
       "workOrderStatus": "Open",
       "plannedStartDate": "2024-11-12",
       "plannedEndDate": "2024-11-14",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "USW001"}
     },
     {
       "title": "Turbine Commissioning",
@@ -132,7 +146,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-09-15",
       "plannedEndDate": "2024-09-18",
-      "actualCompletionDate": "2024-09-17"
+      "actualCompletionDate": "2024-09-17",
+      "windturbine": {"id": "USW001"}
     },
     {
       "title": "Safety Equipment Inspection",
@@ -141,7 +156,8 @@
       "workOrderStatus": "Completed",
       "plannedStartDate": "2024-10-25",
       "plannedEndDate": "2024-10-26",
-      "actualCompletionDate": "2024-10-26"
+      "actualCompletionDate": "2024-10-26",
+      "windturbine": {"id": "USW001"}
     },
     {
       "title": "Environmental Impact Assessment",
@@ -150,6 +166,7 @@
       "workOrderStatus": "Open",
       "plannedStartDate": "2024-11-15",
       "plannedEndDate": "2024-11-17",
-      "actualCompletionDate": null
+      "actualCompletionDate": null,
+      "windturbine": {"id": "USW001"}
     }
 ]

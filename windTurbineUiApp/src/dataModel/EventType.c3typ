@@ -1,0 +1,5 @@
+enum type EventType {
+    OPERATIONAL,
+    PLANNED_MAINTENANCE,
+    UNPLANNED_MAINTENANCE
+}
