@@ -1,0 +1,18 @@
+{
+    "type" : "UiSdlConnected<UiSdlSidePanel>",
+    "component" : {
+      "id": "WindTurbine.TurbineSidePanel",
+      "alignment" : "RIGHT",
+      "position" : "PUSH",
+      "closeBehavior" : "HIDE",
+      "header" : {
+        "title": "Turbine Details",
+        "closeIcon" : "times"
+      },
+      "sections" : [
+      ],
+      "triggersRegistered": true,
+      "wrapWithMetadataId": true
+    }
+  }
+  

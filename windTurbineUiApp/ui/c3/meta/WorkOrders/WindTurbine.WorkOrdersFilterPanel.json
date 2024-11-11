@@ -2,11 +2,7 @@
   "type": "UiSdlConnected<UiSdlFilterPanel>",
   "component": {
     "title": {
-      "title": "SDLDemo.FilterWithMultipleInputsFilterPanel.title"
-    },
-    "settingsMenu": {
-      "allowSaveAndLoadConfiguration": true,
-      "allowAdvancedFilterMode": true
+      "title": "Filter Work Orders"
     },
     "dataSpec": {
       "dataType": "WorkOrder",
@@ -43,6 +39,64 @@
                   },
                   "valueField": "title",
                   "displayField": "title"
+                }
+              }
+            },
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "priority",
+              "label" : "Priority",
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.WorkOrdersGrid": {
+                    "WorkOrder": "priority"
+                  }
+                }
+              },
+              "filterElement": {
+                "type": "UiSdlCheckboxTreeFilterField",
+                "infoTooltipText": "Filter by work order priority level",
+                "inputElement" : {
+                  "type" : "UiSdlCheckboxTree",
+                  "nodes" : [ {
+                    "label" : "Low",
+                    "value" : "Low"
+                  }, {
+                    "label" : "Medium",
+                    "value" : "Medium"
+                  }, {
+                    "label" : "High",
+                    "value" : "High"
+                  } ]
+                }
+              }
+            },
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "workOrderStatus",
+              "label" : "Status",
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.WorkOrdersGrid": {
+                    "WorkOrder": "workOrderStatus"
+                  }
+                }
+              },
+              "filterElement": {
+                "type": "UiSdlCheckboxTreeFilterField",
+                "infoTooltipText": "Filter by work order status",
+                "inputElement" : {
+                  "type" : "UiSdlCheckboxTree",
+                  "nodes" : [ {
+                    "label" : "Open",
+                    "value" : "Open"
+                  }, {
+                    "label" : "In Progress",
+                    "value" : "In Progress"
+                  }, {
+                    "label" : "Completed",
+                    "value" : "Completed"
+                  } ]
                 }
               }
             }

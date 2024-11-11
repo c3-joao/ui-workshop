@@ -6,5 +6,5 @@ entity type WorkOrder schema name 'WRKDR' {
   plannedStartDate: date
   plannedEndDate: date
   actualCompletionDate: date
-  windturbine: Turbine /*missing seed data*/
+  windturbine: Turbine
 }

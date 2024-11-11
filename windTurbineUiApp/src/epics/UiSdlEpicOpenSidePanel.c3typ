@@ -1,0 +1,5 @@
+/**
+ * Async effect to update {@link UiSdlSidePanel} when a row in the {@link UiDataGrid} is clicked
+ */
+@typeScript
+type UiSdlEpicOpenSidePanel extends UiSdlEpic mixes Value
