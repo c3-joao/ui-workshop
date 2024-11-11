@@ -1,11 +1,28 @@
 {
-    "type": "UiSdlLayoutNavMenu",
+  "type": "UiSdlConnected<UiSdlGridLayout>",
+  "component": {
+    "display": "HORIZONTAL",
+    "gridStyle": "FLUID",
     "navMenu": {
-      "id": "WindTurbine.NavMenu"
+      "id": "WindTurbine.NavMenu",
     },
     "children": [
       {
-        "id": "WindTurbine.WorkOrdersLayout"
-      }
+        "type": "UiSdlComponentContainer",
+        "column": 3,
+        "background": "AUTO",
+        "childComponent": {
+          "id": "WindTurbine.WorkOrdersFilterPanel"
+        }
+      },
+      {
+        "type": "UiSdlComponentContainer",
+        "background": "AUTO",
+        "column": 9,
+        "childComponent": {
+          "id": "WindTurbine.WorkOrdersGrid"
+        }
+      },
     ]
   }
+}
