@@ -1,53 +1,54 @@
 {
-    "type" : "UiSdlConnected<UiSdlFilterPanel>",
-    "component" : {
-      "title" : {
-        "title" : "SDLDemo.FilterWithMultipleInputsFilterPanel.title"
-      },
-      "settingsMenu" : {
-        "allowSaveAndLoadConfiguration" : true,
-        "allowAdvancedFilterMode" : true
-      },
-      "dataSpec" : {
-        "dataType" : "WorkOrder",
-        "actionName" : "fetch",
-        "fieldSets" : {
-            "fields": [
-                {
-                    "type": "UiSdlFieldSetFilterFieldSetting",
-                    "fieldName": "title",
-                    "label": "Title",
-                    "componentsToFilterMapping": {
-                    "value": {
-                        "WindTurbine.WorkOrdersGrid": {
-                        "WorkOrder": "title"
-                        }
-                    }
-                    },
-                    "filterElement": {
-                    "type": "UiSdlMultipleSearchFilterField",
-                    "inputElement": {
-                        "serverSearch": true,
-                        "clear": true,
-                        "fluid": true,
-                        "dataSpec": {
-                        "dataType": "WorkOrder",
-                        "actionName": "fetch",
-                        "args": {
-                            "spec": {
-                            "include": "title"
-                            }
-                        },
-                        "dataTransforms": ["UiSdlTransformFetchResultToArray"]
-                        },
-                        "valueField": "title",
-                        "displayField": "title"
-                    }
-                    }
+  "type": "UiSdlConnected<UiSdlFilterPanel>",
+  "component": {
+    "title": {
+      "title": "SDLDemo.FilterWithMultipleInputsFilterPanel.title"
+    },
+    "settingsMenu": {
+      "allowSaveAndLoadConfiguration": true,
+      "allowAdvancedFilterMode": true
+    },
+    "dataSpec": {
+      "dataType": "WorkOrder",
+      "actionName": "fetch",
+      "fieldSets": [
+        {
+          "fields": [
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "title",
+              "label": "Title",
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.WorkOrdersGrid": {
+                    "WorkOrder": "title"
+                  }
                 }
-            ]
+              },
+              "filterElement": {
+                "type": "UiSdlMultipleSearchFilterField",
+                "inputElement": {
+                  "serverSearch": true,
+                  "clear": true,
+                  "fluid": true,
+                  "dataSpec": {
+                    "dataType": "WorkOrder",
+                    "actionName": "fetch",
+                    "args": {
+                      "spec": {
+                        "include": "title"
+                      }
+                    },
+                    "dataTransforms": ["UiSdlTransformFetchResultToArray"]
+                  },
+                  "valueField": "title",
+                  "displayField": "title"
+                }
+              }
+            }
+          ]
         }
-      }
+      ]
     }
   }
-  
+}

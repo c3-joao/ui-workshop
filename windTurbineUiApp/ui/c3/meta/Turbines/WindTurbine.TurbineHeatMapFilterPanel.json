@@ -93,7 +93,7 @@
                   "valueField": "manufacturer",
                   "displayField": "manufacturer"
                 }
-              },
+              }
             },
             {
               "type": "UiSdlFieldSetFilterFieldSetting",
@@ -123,6 +123,7 @@
           ]
         },
         {
+          "type": "UiSdlFilterFieldSet",
           "title": "Specs",
           "fields": [
             {

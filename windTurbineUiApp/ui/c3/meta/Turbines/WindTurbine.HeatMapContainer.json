@@ -2,17 +2,15 @@
   "type": "UiSdlConnected<UiSdlLayoutContainer>",
   "component": {
     "children": [
-      [
-        {
-          "id": "WindTurbine.TurbineHeatMapFilterPanel"
-        },
-        {
-          "id": "WindTurbine.HeatMap",
-          "width": 100
-        }, {
-          "id": "WindTurbine.ApplicationState"
-        }
-      ]
+      {
+        "id": "WindTurbine.TurbineHeatMapFilterPanel"
+      },
+      {
+        "id": "WindTurbine.HeatMap",
+        "width": 100
+      }, {
+        "id": "WindTurbine.ApplicationState"
+      }
     ]
   }
 }
