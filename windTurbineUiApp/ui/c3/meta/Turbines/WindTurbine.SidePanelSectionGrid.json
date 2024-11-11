@@ -1,0 +1,14 @@
+{
+  "type": "UiSdlConnected<UiSdlSidePanelSection>",
+  "component": {
+    "title": "Work Orders",
+    "children": [
+      {
+        "id": "WindTurbine.WorkOrderButton"
+      },
+      {
+        "id": "WindTurbine.SingleTurbineWorkOrderGrid"
+      }
+    ]
+  }
+}

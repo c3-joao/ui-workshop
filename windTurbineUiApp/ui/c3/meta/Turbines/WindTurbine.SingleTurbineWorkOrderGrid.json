@@ -1,0 +1,45 @@
+{
+  "type": "UiSdlConnected<UiSdlDataGrid>",
+
+  "component": {
+    "header": {
+      "title": "Work Orders"
+    },
+    "paginationConfig": {
+      "pageSize": 10,
+      "pagination": true
+    },
+    "reorderableColumns": true,
+    "filterBar": true,
+    "dataSpec": {
+      "dataType": "WorkOrder",
+      "contextVars": {
+        "windturbine": {
+          "type": "UiSdlApplicationStateValueParam",
+          "id": "WindTurbine.UiSdlApplicationStateWT",
+          "path": "turbine.id"
+        }
+      },
+      "columnFields": [
+        {
+          "fieldName": "title",
+          "label": "Title",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "priority",
+          "label": "Priority",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "workOrderStatus",
+          "label": "Status",
+          "sortable": true,
+          "searchable": true
+        }
+      ]
+    }
+  }
+}

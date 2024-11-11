@@ -9,7 +9,7 @@
 import { flatMap } from 'rxjs/operators';
 import { concat, of } from 'rxjs';
 import { updateHeaderAction, openCloseSidePanelAction } from '@c3/ui/UiSdlSidePanel';
-//import { storeRowRecordAction } from '@c3/ui/UiSdlApplicationStateCollections';
+import { storeRowRecordAction } from '@c3/ui/UiSdlApplicationStateWT';
 import { UiSdlActionsObservable, UiSdlStatesObservable } from '@c3/types';
 
 export function epic(
@@ -22,7 +22,7 @@ export function epic(
       const sidePanelId = action.payload?.sidePanelId;
       const obj = action.payload?.dataItem?.obj;
 
-      return concat(/* of(storeRowRecordAction(applicationStateId, obj)), */ of(openCloseSidePanelAction(sidePanelId, true)));
+      return concat(of(storeRowRecordAction(applicationStateId, obj)), of(openCloseSidePanelAction(sidePanelId, true)));
     })
   );
 }
