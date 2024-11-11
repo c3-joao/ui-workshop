@@ -8,6 +8,9 @@
         {
           "id": "WindTurbine.TurbinesMapContainer",
           "title": "Map"
+        }, {
+          "id": "WindTurbine.HeatMapContainer",
+          "title": "Heatmap"
         }
       ],
       "primaryActionButtonTitle": "Add Turbine",

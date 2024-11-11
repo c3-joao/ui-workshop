@@ -1,0 +1,4 @@
+@typeScript(sourceCodeType="Module")
+type WindTurbineEpicUpdateCity mixes UiSdlEpic {
+epic: ~ ts-client
+}

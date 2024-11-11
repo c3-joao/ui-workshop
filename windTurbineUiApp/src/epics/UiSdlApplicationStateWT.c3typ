@@ -19,4 +19,12 @@ type UiSdlApplicationStateWT mixes UiSdlApplicationState {
    @typeScript(env="client")
    storeEventRecordAction: function(id: string, obj: json): UiSdlReduxAction
 
+   @typeScript(env="client")
+   @uiSdlReducer(actionType='HEAT_MAP_FILTER_ADD')
+   heatMapFilterReducer: private inline function(state: !UiSdlReduxState, action: UiSdlReduxAction): UiSdlReduxState
+
+   @uiSdlActionCreator(actionType='HEAT_MAP_FILTER_ADD')
+   @typeScript(env="client")
+   filterHeatMapAction: function(id: string, obj: json): UiSdlReduxAction
+
 }

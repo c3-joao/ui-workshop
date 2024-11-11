@@ -1,0 +1,4 @@
+@typeScript(sourceCodeType="Module")
+type WindTurbineEpicFilterHeatMap mixes UiSdlEpic {
+epic: ~ ts-client
+}

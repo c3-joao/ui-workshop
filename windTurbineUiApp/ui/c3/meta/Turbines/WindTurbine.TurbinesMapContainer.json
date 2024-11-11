@@ -4,6 +4,9 @@
       "children": [
         [
           {
+            "id": "WindTurbine.TurbineMapFilterPanel"
+          },
+          {
             "id": "WindTurbine.TurbinesMap",
             "width": 100
           }

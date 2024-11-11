@@ -1,0 +1,188 @@
+{
+  "type": "UiSdlConnected<UiSdlFilterPanel>",
+  "component": {
+    "title": {
+      "title": "WindTurbine Filter Panel"
+    },
+    "dataSpec": {
+      "dataType": "WindTurbine",
+      "actionName": "fetch",
+      "actionArgs": {
+        "spec": {
+          "include": "this"
+        }
+      },
+      "fieldSets": [
+        {
+          "title" : "Location",
+          "collapsed" : false,
+          "fields" : [ {
+            "type" : "UiSdlFieldSetFilterFieldSetting",
+            "fieldName" : "country",
+            "label" : "Country",
+            "componentsToFilterMapping" : {
+              "value" : {
+                "WindTurbine.TurbinesMap" : {
+                  "WindTurbine" : "country"
+                }
+              }
+            },
+            "filterElement" : {
+              "type" : "UiSdlSingleSearchFilterField",
+              "inputElement" : {
+                "clear" : true,
+                "fluid" : true,
+                "placeholder" : "Country",
+                "dataSpec" : {
+                  "dataType" : "WindTurbine",
+                  "actionName" : "fetch",
+                  "args" : {
+                    "spec" : {
+                      "include" : "id, country, city"
+                    }
+                  },
+                  "dataTransforms" : [ "UiSdlTransformFetchResultToArray" ]
+                },
+                "valueField" : "country",
+                "displayField" : "country"
+              }
+            }
+          }, {
+            "type" : "UiSdlFieldSetFilterFieldSetting",
+            "fieldName" : "city",
+            "label" : "City",
+            "componentsToFilterMapping" : {
+              "value" : {
+                "WindTurbine.TurbinesMap" : {
+                  "WindTurbine" : "city"
+                }
+              }
+            },
+            "filterElement" : {
+              "type" : "UiSdlSelectInputFilterField",
+              "inputElement" : {
+                "clear" : true,
+                "fluid" : true,
+                "placeholder" : "City",
+                "dataSpec" : {
+                  "dataType" : "WindTurbine",
+                  "actionName" : "fetch",
+                  "args" : {
+                    "spec" : {
+                      "include" : "id, country, city"
+                    }
+                  },
+                  "dataPath" : "objs",
+                  "valueField" : "city",
+                  "displayField" : "city"
+                }
+              }
+            }
+          } ]
+        },
+        {
+          "title": "Make",
+          "fields": [
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "label": "Manufacturer",
+              "fieldName": "manufacturer",
+              "filterElement": {
+                "type": "UiSdlMultipleSearchFilterField",
+                "inputElement": {
+                  "serverSearch": false,
+                  // "optionsLimit": 5,
+                  "clear": true,
+                  "fluid": true,
+                  "placeholder": "Manufacturer",
+                  "dataSpec": {
+                    "dataType": "WindTurbine",
+                    "actionName": "fetch",
+                    "args": {
+                      "spec": {
+                        "include": "manufacturer"
+                      }
+                    },
+                    "dataTransforms": ["UiSdlTransformFetchResultToArray"]
+                  },
+                  "valueField": "manufacturer",
+                  "displayField": "manufacturer"
+                }
+              },
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.TurbinesMap": {
+                    "WindTurbine": "manufacturer"
+                  }
+                }
+              }
+            },
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "facility",
+              "label": "Facility",
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.TurbinesMap": {
+                    "WindTurbine": "facility"
+                  }
+                }
+              },
+              "filterElement": {
+                "type": "UiSdlMultipleSearchFilterField",
+                "inputElement": {
+                  "clear": true,
+                  "fluid": true,
+                  "placeholder": "Facility",
+                  "dataSpec": {
+                    "dataType": "WindTurbine",
+                    "actionName": "fetch",
+                    "args": {
+                      "spec": {
+                        "include": "facility"
+                      }
+                    },
+                    "dataPath": "objs",
+                    "valueField": "facility",
+                    "displayField": "facility"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "Specs",
+          "fields": [
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "power",
+              "label": "Power",
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.TurbinesMap": {
+                    "WindTurbine": "power"
+                  }
+                }
+              },
+              "filterElement": {
+                "type": "UiSdlNumberRangeInputFilterField",
+                "inputElement": {
+                  "min": 0,
+                  "max": 300,
+                  "markStep": 50
+                }
+              }
+            },
+          ]
+        }
+      ]
+    }
+  }, 
+  "effectTriggers": [
+    {
+      "trigger": "WindTurbine.TurbineMapFilterPanel.SINGLE_INPUT_CHANGE",
+      "effectType": "WindTurbineEpicUpdateCity"
+    }
+  ]
+}
