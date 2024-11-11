@@ -10,6 +10,12 @@
             "id": "WindTurbine.TurbinesMap",
             "width": 100
           }
+        ],
+        [
+          {
+            "id": "WindTurbine.TurbinesGrid",
+            "width": 100
+          }
         ]
       ]
     }

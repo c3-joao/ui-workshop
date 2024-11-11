@@ -1,0 +1,49 @@
+{
+  "type": "UiSdlConnected<UiSdlDataGrid>",
+
+  "component": {
+    "header": {
+      "title": "Turbines"
+    },
+    "paginationConfig": {
+      "pageSize": 10,
+      "pagination": true
+    },
+    "reorderableColumns": true,
+    "filterBar": true,
+    "dataSpec": {
+      "dataType": "WindTurbine",
+      "columnFields": [
+        {
+          "fieldName": "name",
+          "label": "Name",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "latitude",
+          "label": "Latitude",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "longitude",
+          "label": "Longitude",
+          "sortable": true,
+          "searchable": true
+        }
+      ]
+    }
+  },
+  "effectTriggers": [
+    {
+      "trigger" : "WindTurbine.TurbinesGrid.ROW_CLICK",
+      "effectType" : "UiSdlEpicOpenSidePanel",
+      "payloadStrategy" : "MERGE",
+      "payload" : {
+        "applicationStateId" : "WindTurbine.UiSdlApplicationStateWT",
+        "sidePanelId" : "WindTurbine.TurbineSidePanel"
+      }
+    }
+  ]
+}
