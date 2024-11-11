@@ -17,7 +17,7 @@
         "column": 9,
         "background": "AUTO",
         "display": "VERTICAL",
-        "children": ["WindTurbine.TurbinesMap"]
+        "children": ["WindTurbine.TurbinesMap", "WindTurbine.TurbineGrid"]
       }
     ]
   }
