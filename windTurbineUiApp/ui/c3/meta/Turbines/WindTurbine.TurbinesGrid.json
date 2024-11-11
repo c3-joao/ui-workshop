@@ -11,6 +11,7 @@
     },
     "filterBar": true,
     "dataSpec": {
+      "filter": "operationalStatus != 'Decommissioned'",
       "dataType": "Turbine",
       "columnFields": [
         {
