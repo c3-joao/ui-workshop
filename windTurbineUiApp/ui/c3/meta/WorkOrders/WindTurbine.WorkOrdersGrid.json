@@ -25,6 +25,42 @@
           "label": "Description",
           "sortable": true,
           "searchable": true
+        },
+        {
+          "fieldName": "priority",
+          "label": "Priority",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "workOrderStatus",
+          "label": "Status",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "workOrderStatus",
+          "label": "Status",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "plannedStartDate",
+          "label": "Planned Start Date",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "plannedEndDate",
+          "label": "Planned End Date",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "actualCompletionDate",
+          "label": "Actual Completion Date",
+          "sortable": true,
+          "searchable": true
         }
       ]
     }
