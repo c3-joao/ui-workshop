@@ -1,4 +1,4 @@
 targetModuleName,targetPageName,name,urlPath
 WindTurbine,Turbines,/,/
-WindTurbine,Turbines,/windturbine/turbines,/windturbine/turbines
-WindTurbine,WorkOrders,/windturbine/workorders,/windturbine/workorders
+WindTurbine,Turbines,/windturbines,/windturbines
+WindTurbine,WorkOrders,/work-orders,/work-orders

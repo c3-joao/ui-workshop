@@ -9,10 +9,9 @@
       "pageSize": 10,
       "pagination": true
     },
-    "reorderableColumns": true,
     "filterBar": true,
     "dataSpec": {
-      "dataType": "WindTurbine",
+      "dataType": "Turbine",
       "columnFields": [
         {
           "fieldName": "name",
@@ -21,16 +20,20 @@
           "searchable": true
         },
         {
-          "fieldName": "latitude",
-          "label": "Latitude",
-          "sortable": true,
-          "searchable": true
+          "fieldName": "model.manufacturer.name",
+          "label": "Manufacturer"
         },
         {
-          "fieldName": "longitude",
-          "label": "Longitude",
-          "sortable": true,
-          "searchable": true
+          "fieldName": "model.modelName",
+          "label": "Model"
+        },
+        {
+          "fieldName": "model.rotorDiameterMeters",
+          "label": "Rotor Diameter (m)"
+        },
+        {
+          "fieldName": "model.bladeType",
+          "label": "Blade Type"
         }
       ]
     }

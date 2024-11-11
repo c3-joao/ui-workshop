@@ -7,19 +7,19 @@
         "items": [
           {
             "id": "turbines",
-            "title": "Turbines",
-            "icon": "HOME",
+            "title": "Windturbines",
+            "icon": "SITEMAP",
             "redirectRoute": {
-              "urlPath": "/windturbine/turbines"
+              "urlPath": "/windturbines"
             }
           }
           ,
           {
             "id": "measurements",
-            "title": "Measurements",
-            "icon": "COG",
+            "title": "Work orders",
+            "icon": "TOOLBOX",
             "redirectRoute": {
-              "urlPath": "/windturbine/workorders"
+              "urlPath": "work-orders"
             }
           }
         ]

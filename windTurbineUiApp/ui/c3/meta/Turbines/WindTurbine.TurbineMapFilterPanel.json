@@ -2,7 +2,7 @@
   "type": "UiSdlConnected<UiSdlFilterPanel>",
   "component": {
     "title": {
-      "title": "WindTurbine Filter Panel"
+      "title": "Filter Wind Turbines"
     },
     "dataSpec": {
       "dataType": "WindTurbine",
