@@ -1,6 +1,6 @@
 id, name,countryOfOrigin,incorporationDate,website
-1,Vestas,37,1945-01-01,https://www.vestas.com
-2,Siemens,38,1976-01-01,https://www.siemensgamesa.com
-3,GE Renewable Energy,49,2002-01-01,https://www.ge.com/renewableenergy
-4,Nordex,,38,1985-01-01,https://www.nordex-online.com
-5,Goldwind,31,1998-01-01,https://www.goldwind.com
+1,"Vestas",37,1945-01-01,https://www.vestas.com
+2,"Siemens",38,1976-01-01,https://www.siemensgamesa.com
+3,"GE Renewable Energy",49,2002-01-01,https://www.ge.com/renewableenergy
+4,"Nordex",38,1985-01-01,https://www.nordex-online.com
+5,"Goldwind",31,1998-01-01,https://www.goldwind.com
