@@ -1,23 +1,24 @@
 {
-    "type": "UiSdlConnected<UiSdlLayoutContainer>",
-    "component": {
-      "children": [
-        [
-          {
-            "id": "WindTurbine.TurbineMapFilterPanel"
-          },
-          {
-            "id": "WindTurbine.TurbinesMap",
-            "width": 100
-          }
-        ],
-        [
-          {
-            "id": "WindTurbine.TurbinesGrid",
-            "width": 100
-          }
-        ]
-      ]
-    }
+  "type": "UiSdlConnected<UiSdlGridLayout>",
+  "component": {
+    "display": "HORIZONTAL",
+    "gridStyle": "FLUID",
+    "fixedSize": "MEDIUM",
+    "pagePadding": 0,
+    "children": [
+      {
+        "type": "UiSdlGridContainer",
+        "column": 3,
+        "background": "AUTO",
+        "children": ["3 WindTurbine.TurbineMapFilterPanel"]
+      },
+      {
+        "type": "UiSdlGridContainer",
+        "column": 9,
+        "background": "AUTO",
+        "display": "VERTICAL",
+        "children": ["WindTurbine.TurbinesMap", "WindTurbine.TurbinesGrid"]
+      }
+    ]
   }
-  
+}

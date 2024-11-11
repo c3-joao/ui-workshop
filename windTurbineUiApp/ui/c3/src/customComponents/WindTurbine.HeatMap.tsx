@@ -13,12 +13,16 @@ const WindTurbineHeatMap = () => {
     return getConfigFromApplicationState('WindTurbine.ApplicationState', state, ['turbineFilter']);
   });
 
+  const eventFilter = useSelector((state) => {
+    return getConfigFromApplicationState('WindTurbine.ApplicationState', state, ['eventFilter']);
+  });
+
   useEffect(function () {
     const reqData = async () => {
       const url = `api/8/WindTurbineEvent/fetch`;
       const turbines = await axios.post(`api/8/WindTurbine/fetch`, ['WindTurbine', {filter: turbineFilter}]);
       const turbineIds = turbines.data.objs.map((turbine) => turbine.id);
-      const response = await axios.post(url, ['WindTurbineEvent', {limit: 100, filter: `intersects(turbineId, ${JSON.stringify(turbineIds)})`}]);
+      const response = await axios.post(url, ['WindTurbineEvent', {filter: `intersects(turbineId, ${JSON.stringify(turbineIds)}) && ${eventFilter ?? '1 == 1'}`}]);
       
       return {events: response.data.objs, turbines: turbines.data.objs};
     }
@@ -27,10 +31,10 @@ const WindTurbineHeatMap = () => {
       setData(fetchResult.events);
       setTurbines(fetchResult.turbines);
     });
-  }, [turbineFilter])
+  }, [turbineFilter, eventFilter])
 
   if (data) {
-    const useThis = data.filter((dataItem) =>  dataItem.event_code === 'SYSTEM_REBOOT');
+    const useThis = data;
     const timestamps = useThis.map((dataItem) => dataItem.end).sort();
     
     const yLabels = [];
@@ -83,11 +87,8 @@ const WindTurbineHeatMap = () => {
       )
     }
 
-    // const data = [];
-    // const xLabels = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    // const yLabels = ['WindTurbine1', 'WindTurbine2', 'WindTurbine3', 'WindTurbine4'];
     return <div>
-        <h2> Heat Map of System Reboot Events </h2>
+        <h2> Heat Map of {eventFilter && eventFilter !== '1 == 1' ? eventFilter.substring(eventFilter.indexOf('"'), eventFilter.lastIndexOf('"')).replaceAll('"', '').replaceAll(',', ' and ') + ' ' : 'All '}Events </h2>
         <HeatMap yLabelWidth={150} xLabelWidth={0} onClick={handleClick} xLabelsVisibility={xLabelDisplay} cellStyle={(background, value, min, max, data, x, y) => ({border: 'var(--c3-style-colorBorderWeak) solid 1px', background: `rgba(255, 0, 0, ${1 - (max - value) / (max - min)})`})} xLabels={xLabels} yLabels={yLabels} data={finalData} cellRender={renderCell} />
       </div>
   }

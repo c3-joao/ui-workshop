@@ -1,11 +1,24 @@
 {
-  "type": "UiSdlLayoutNavMenu",
-  "navMenu": {
-    "id": "WindTurbine.NavMenu"
-  },
-  "children": [
-    {
-      "id": "WindTurbine.TurbinesLayout"
-    }
-  ]
+  "type": "UiSdlConnected<UiSdlGridLayout>",
+  "component": {
+    "navMenu": {
+      "id": "WindTurbine.NavMenu"
+    },
+    "gridStyle": "FLUID",
+    "header": {
+      "children": [{
+        "type": "UiSdlComponentContainer",
+        "childComponent": {
+          "id": "WindTurbine.TurbinesTabPanel"
+        }
+      }]
+    },
+    "detachedFields": [
+      {
+        "id": "WindTurbine.AddTurbineModal"
+      }, {
+        "id": "WindTurbine.UiSdlApplicationStateWT"
+      }
+    ]
+  }
 }

@@ -4,6 +4,7 @@ import { getConfigFromState } from "@c3/ui/UiSdlConnected";
 import { filterHeatMapAction } from "@c3/ui/UiSdlApplicationStateWT";
 import Filter from "@c3/ui/UiSdlFilter";
 import isArray from 'lodash/isArray';
+import isEmpty from 'lodash/isEmpty';
 
 export function epic(actionStream, stateStream) {
   return actionStream.pipe(
@@ -27,7 +28,7 @@ export function epic(actionStream, stateStream) {
               turbineFilter = turbineFilter.and().ge(field, fields[field].value[0]).and().le(field, fields[field].value[1]);
             }
           }
-        } else if (fields[field].value) {
+        } else if (fields[field].value && !isEmpty(fields[field].value)) {
           eventFilter = eventFilter.and().intersects(field, fields[field].value);
         }
       })

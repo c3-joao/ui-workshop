@@ -1,15 +1,31 @@
 {
-  "type": "UiSdlConnected<UiSdlLayoutContainer>",
+  "type": "UiSdlConnected<UiSdlGridLayout>",
   "component": {
+    "display": "HORIZONTAL",
+    "gridStyle": "FLUID",
+    "fixedSize": "MEDIUM",
+    "pagePadding": 0,
+    "detachedFields": [{ "id": "WindTurbine.ApplicationState" }],
     "children": [
       {
-        "id": "WindTurbine.TurbineHeatMapFilterPanel"
+        "type": "UiSdlGridContainer",
+        "column": 3,
+        "background": "AUTO",
+        "children": ["WindTurbine.TurbineHeatMapFilterPanel"]
       },
       {
-        "id": "WindTurbine.HeatMap",
-        "width": 100
-      }, {
-        "id": "WindTurbine.ApplicationState"
+        "type": "UiSdlGridContainer",
+        "column": 9,
+        "background": "AUTO",
+        "display": "VERTICAL",
+        "children": [
+          {
+            "padding": 16,
+            "childComponent": {
+              "id": "WindTurbine.HeatMap"
+            }
+          }
+        ]
       }
     ]
   }
