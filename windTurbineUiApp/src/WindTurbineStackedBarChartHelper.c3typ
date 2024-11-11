@@ -1,3 +1,0 @@
-type WindTurbineStackedBarChartHelper {
-  evaluate: function (spec: !EvaluateSpec): EvaluateResult js-server
-}

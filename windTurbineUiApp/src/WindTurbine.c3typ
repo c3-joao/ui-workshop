@@ -38,11 +38,6 @@ entity type WindTurbine schema name 'WNDT' {
   manufacturer: string
 
   /**
-   * The {@link WindTurbineMeasurement} belonging to the wind turbine.
-   */
-  measurements: [WindTurbineMeasurement](turbineId)
-
-  /**
    * The {@link WindTurbineEvent}s belonging to the wind turbine.
    */
   events:       [WindTurbineEvent](turbineId)

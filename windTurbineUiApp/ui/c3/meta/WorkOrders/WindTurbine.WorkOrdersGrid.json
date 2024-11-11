@@ -6,7 +6,7 @@
       "title": "Work Orders"
     },
     "paginationConfig": {
-      "pageSize": 10,
+      "pageSize": 30,
       "pagination": true
     },
     "reorderableColumns": true,
@@ -29,12 +29,6 @@
         {
           "fieldName": "priority",
           "label": "Priority",
-          "sortable": true,
-          "searchable": true
-        },
-        {
-          "fieldName": "workOrderStatus",
-          "label": "Status",
           "sortable": true,
           "searchable": true
         },

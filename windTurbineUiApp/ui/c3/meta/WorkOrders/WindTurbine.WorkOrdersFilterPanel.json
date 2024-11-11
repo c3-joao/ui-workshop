@@ -4,10 +4,6 @@
     "title": {
       "title": "Filter Work Orders"
     },
-    "settingsMenu": {
-      "allowSaveAndLoadConfiguration": true,
-      "allowAdvancedFilterMode": true
-    },
     "dataSpec": {
       "dataType": "WorkOrder",
       "actionName": "fetch",
@@ -59,7 +55,7 @@
               },
               "filterElement": {
                 "type": "UiSdlCheckboxTreeFilterField",
-                "infoTooltipText": "SDLDemo.FilterNestedGridFilterPanel.infoTooltipText",
+                "infoTooltipText": "Filter by work order priority level",
                 "inputElement" : {
                   "type" : "UiSdlCheckboxTree",
                   "nodes" : [ {
@@ -88,7 +84,7 @@
               },
               "filterElement": {
                 "type": "UiSdlCheckboxTreeFilterField",
-                "infoTooltipText": "SDLDemo.FilterNestedGridFilterPanel.infoTooltipText",
+                "infoTooltipText": "Filter by work order status",
                 "inputElement" : {
                   "type" : "UiSdlCheckboxTree",
                   "nodes" : [ {
