@@ -14,66 +14,20 @@
       "fields": [
         {
           "label": "Name",
-          "fieldName": "name",
-          // "labelIcon": "info-circle",
-          // "tooltipText": "SDLDemo.DefinitionLists1.TooltipText",
-          // "valueIconMap": {
-          //   "running": "hourglass",
-          //   "finished": "check-circle"
-          // },
-          // "subInfo": {
-          //   "type": "UiSdlDefinitionListSubInfoFieldSetting",
-          //   "fieldName": "description"
-          // }
+          "fieldName": "name"
         },
         {
           "label": "Status",
-          "fieldName": "operationalStatus",
-          // "placeholder": "--",
-          // "subInfo": {
-          //   "type": "UiSdlDefinitionListSubInfoFieldSetting",
-          //   "fieldName": "foo",
-          //   "placeholder": "--"
-          // }
+          "fieldName": "operationalStatus"
         },
         {
           "label": "Model",
           "fieldName": "model.modelName",
-          // "formatSpec": {
-          //   "dynamicValue": {
-          //     "type": "UiSdlComponentDataSpecStateParam",
-          //     "id": "SDLDemo.DefinitionList1",
-          //     "path": "metric1",
-          //     "format": {
-          //       "type": "UiSdlNumberParamKindFormat",
-          //       "spec": {
-          //         "style": "decimal",
-          //         "minimumIntegerDigits": 5,
-          //         "maximumFractionDigits": 3
-          //       }
-          //     }
-          //   }
-          // },
           "subInfo": {
             "type": "UiSdlDefinitionListSubInfoFieldSetting",
             "fieldName": "model.manufacturer.name",
-            // "formatSpec": {
-            //   "dynamicValue": {
-            //     "type": "UiSdlComponentDataSpecStateParam",
-            //     "id": "SDLDemo.DefinitionList1",
-            //     "path": "metric2",
-            //     "format": {
-            //       "type": "UiSdlNumberParamKindFormat",
-            //       "spec": {
-            //         "style": "decimal",
-            //         "minimumIntegerDigits": 2,
-            //         "maximumFractionDigits": 5
-            //       }
-            //     }
-            //   }
-            // }
           }
-        },
+        }
       ]
     },
     "orientation": "HORIZONTAL",
