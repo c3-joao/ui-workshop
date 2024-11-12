@@ -6,4 +6,6 @@ entity type Turbine schema name 'TRBN' {
     isInMaintenance: boolean
     model: Model
     workOrders: [WorkOrder](windturbine)
+    events: [TurbineEvent](windturbine)
+    latestEvent: EventType stored calc latestValue(events.eventType)
 }

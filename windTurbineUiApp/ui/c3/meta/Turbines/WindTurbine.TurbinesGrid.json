@@ -3,7 +3,7 @@
 
   "component": {
     "header": {
-      "title": "Turbines"
+      "title": "Turbine"
     },
     "paginationConfig": {
       "pageSize": 10,

@@ -1,74 +1,51 @@
 {
     "type": "UiSdlConnected<UiSdlMap>",
-    "component": {
-      "dataSpec": {
-        "type": "UiSdlMapDataSpec",
-        "disableDataRequestOnFirstRender": false,
-        "markerOpacity": 1,
-        "dataType": "WindTurbine",
-        "latitude": {
-          "type": "UiSdlFieldBasedDataSpecSetting",
-          "dataRecordMapping": {
-            "dependingField": "latitude"
+      "component": {
+        "defaultMarkerShape": "CIRCLE",
+        "defaultMarkerColor": "#415b9f",
+        "dataSpec": {
+          "dataType": "Turbine",
+          "latitude": {
+            "fieldName": "latitude"
           },
-          "fieldName": "latitude"
-        },
-        "longitude": {
-          "type": "UiSdlFieldBasedDataSpecSetting",
-          "dataRecordMapping": {
-            "dependingField": "longitude"
+          "longitude": {
+            "fieldName": "longitude"
           },
-          "fieldName": "longitude"
-        },
-        "tooltipAdditionalFields": [
-          {
-            "fieldName": "name",
-            "label": "Name"
+          "tooltipHeader": {
+            "fieldName": "name"
           },
-          {
-            "fieldName": "country",
-            "label": "Country"
+          "tooltipSubHeader": {
+            "fieldName": "operationalStatus"
           },
-          {
-            "fieldName": "city",
-            "label": "City"
-          },
-          {
-            "fieldName": "manufacturer",
-            "label": "manufacturer"
-          }
-        ],
-        "markerColor": {
-          "fieldName": "lastEvent.event_code",
-          "colorConfigurationStrategy": {
-            "type": "UiSdlMapMarkerCategoricalColorSetting",
-            "categoryColors": [
-              {"label": "SYSTEM_REBOOT", "color": "#BAB056"},
-              {"label": "DIAGNOSTICS_COMPLETE", "color": "#B073FF"},
-              {"label": "PLANNED_MAINTENANCE", "color": "#2266F0"},
-              {"label": "UNPLANNED_MAINTENANCE", "color": "#49BFA9"},
-              {"label": "SYSTEM_OVERLOAD", "color": "#49BF"}
-            ]
+          "tooltipAdditionalFields": [
+            {
+              "fieldName": "model.manufacturer.name",
+              "label": "Manufacturer"
+            },
+            {
+              "fieldName": "model.modelName",
+              "label": "Model"
+            },
+            {
+              "fieldName": "model.rotorDiameterMeters",
+              "label": "Rotor Diameter (m)"
+            },
+            {
+              "fieldName": "model.bladeType",
+              "label": "bladeType"
+            }
+          ],
+          "markerColor": {
+            "fieldName": "lastEvent.eventType",
+            "colorConfigurationStrategy": {
+              "type": "UiSdlMapMarkerCategoricalColorSetting",
+              "categoryColors": [
+                {"label": "OPERATIONAL", "color": "#72DBC8"},
+                {"label": "PLANNED_MAINTENANCE", "color": "#FFBE4F"},
+                {"label": "UNPLANNED_MAINTENANCE", "color": "#FF7893"}
+              ]
+            }
           }
         }
-      },
-      "centering": {
-        "type": "UiSdlMapFixedCentering",
-        "latitude": 37.48196,
-        "longitude": -122.224
-      },
-      "defaultMarkerShape": "CIRCLE",
-      "height": 450,
-      "defaultMarkerColor": "#415b9f",
-      "zoom": {
-        "type": "UiSdlMapAutoZoom"
-      },
-      "mapStyle": "THEMED",
-      "hideControls": false,
-      "wrapWithMetadataId": false,
-      "type": "UiSdlMap",
-      "id": "WindTurbine.TurbinesMap",
-      "triggersRegistered": true
-    }
+      }
   }
-  

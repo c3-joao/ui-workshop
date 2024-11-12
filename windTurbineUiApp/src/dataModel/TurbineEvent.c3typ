@@ -1,5 +1,5 @@
 entity type TurbineEvent schema name 'EVT' {
     time: datetime
     eventType: EventType
-    windTurbine: Turbine
+    windturbine: Turbine
 }

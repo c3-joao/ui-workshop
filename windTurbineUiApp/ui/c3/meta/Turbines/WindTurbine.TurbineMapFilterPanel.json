@@ -6,12 +6,6 @@
     },
     "dataSpec": {
       "dataType": "WindTurbine",
-      "actionName": "fetch",
-      "actionArgs": {
-        "spec": {
-          "include": "this"
-        }
-      },
       "fieldSets": [
         {
           "title" : "Location",
