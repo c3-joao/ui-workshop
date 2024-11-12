@@ -19,10 +19,10 @@ const WindTurbineHeatMap = () => {
 
   useEffect(function () {
     const reqData = async () => {
-      const url = `api/8/WindTurbineEvent/fetch`;
-      const turbines = await axios.post(`api/8/WindTurbine/fetch`, ['WindTurbine', {filter: turbineFilter}]);
+      const url = `api/8/TurbineEvent/fetch`;
+      const turbines = await axios.post(`api/8/Turbine/fetch`, ['Turbine', {filter: turbineFilter}]);
       const turbineIds = turbines.data.objs.map((turbine) => turbine.id);
-      const response = await axios.post(url, ['WindTurbineEvent', {filter: `intersects(turbineId, ${JSON.stringify(turbineIds)}) && ${eventFilter ?? '1 == 1'}`}]);
+      const response = await axios.post(url, ['TurbineEvent', {filter: `intersects(windturbine, ${JSON.stringify(turbineIds)}) && ${eventFilter ?? '1 == 1'}`}]);
       
       return {events: response.data.objs, turbines: turbines.data.objs};
     }
@@ -35,7 +35,7 @@ const WindTurbineHeatMap = () => {
 
   if (data) {
     const useThis = data;
-    const timestamps = useThis.map((dataItem) => dataItem.end).sort();
+    const timestamps = useThis.map((dataItem) => dataItem.time).sort();
     if (timestamps.length) {
       const yLabels = [];
       
@@ -52,16 +52,16 @@ const WindTurbineHeatMap = () => {
 
       const everythingMap = {};
       useThis.forEach(item => {
-        const name = turbines?.find((turbine) => turbine.id === item.turbineId.id)?.name
+        const name = turbines?.find((turbine) => turbine.id === item.windturbine.id)?.name
         if (everythingMap[name]) {
-          if (everythingMap[name][new DateTime(item.end).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')]) {
-            everythingMap[name][new DateTime(item.end).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')] += 1;
+          if (everythingMap[name][new DateTime(item.time).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')]) {
+            everythingMap[name][new DateTime(item.time).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')] += 1;
           } else {
-            everythingMap[name][new DateTime(item.end).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')] = 1;
+            everythingMap[name][new DateTime(item.time).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')] = 1;
           }
         } else {
           everythingMap[name] = {};
-          everythingMap[name][new DateTime(item.end).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')] = 1;
+          everythingMap[name][new DateTime(item.time).withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).toString('MM-dd')] = 1;
         }
       });
 

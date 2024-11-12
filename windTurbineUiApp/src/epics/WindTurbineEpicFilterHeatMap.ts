@@ -29,7 +29,7 @@ export function epic(actionStream, stateStream) {
             }
           }
         } else if (fields[field].value && !isEmpty(fields[field].value)) {
-          eventFilter = eventFilter.and().intersects(field, fields[field].value);
+          eventFilter = eventFilter.and().intersects('eventType', fields[field].value);
         }
       })
       return concat(
