@@ -7,5 +7,5 @@ entity type Turbine mixes MetricEvaluatable schema name 'TRBN' {
     model: Model
     workOrders: [WorkOrder](windturbine)
     events: [TurbineEvent](windturbine)
-    latestEvent: EventType stored calc latestValue(events.eventType)
+    latestEvent: TurbineEvent stored calc latestValue(events)
 }

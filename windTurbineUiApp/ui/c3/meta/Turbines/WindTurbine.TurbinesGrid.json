@@ -2,7 +2,7 @@
   "type": "UiSdlConnected<UiSdlDataGrid>",
   "component": {
     "header": {
-      "title": "Turbine"
+      "title": "Turbines"
     },
     "paginationConfig": {
       "pageSize": 10,
