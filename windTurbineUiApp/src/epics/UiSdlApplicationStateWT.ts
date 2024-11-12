@@ -2,7 +2,7 @@ import { setConfigInApplicationState } from '@c3/ui/UiSdlApplicationState';
 
 export function rowRecordStoreReducer(state, action) {
   const appStateId = action.payload.componentId;
-  return setConfigInApplicationState(appStateId, state, ['rowRecord'], action.payload.obj.id);
+  return setConfigInApplicationState(appStateId, state, ['turbine'], action.payload.obj);
 }
 
 export function storeRowRecordAction(id, obj) {

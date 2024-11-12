@@ -1,0 +1,11 @@
+{
+  "type": "UiSdlConnected<UiSdlSidePanelSection>",
+  "component": {
+    "title": "Turbine Temperature",
+    "children": [
+      {
+        "id": "WindTurbine.TurbineAverageTempChart"
+      }
+    ]
+  }
+}

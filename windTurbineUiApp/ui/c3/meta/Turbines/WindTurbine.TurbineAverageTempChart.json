@@ -3,30 +3,22 @@
     "type": "UiSdlConnected<UiSdlTimeseriesLineBarChart>",
     "component": {
       "header": {
-        "title": "Average Gear Oil Temperature"
+        "title": "Number of events over time"
       },
-      "legend": {
-        "legendPosition": "BELOW_CHART"
-      },
-  
-      "zoomEnabled": true,
-      "dataZoom": true,
-      "dataSelection": true,
       "xAxis": {
         "type": "UiSdlTimeseriesLineBarChartXAxisConfig",
-        "name": "Gear Oil Temperature"
+        "name": "Date"
       },
       "yAxis": {
-        "name": "Power",
-        "units": true
+        "name": "Number of events"
       },
       "dataSpec": {
-        "dataType": "WindTurbine",
+        "dataType": "Turbine",
         "contextVars": {
           "id": {
             "type": "UiSdlApplicationStateValueParam",
             "id": "WindTurbine.UiSdlApplicationStateWT",
-            "path": "pageId"
+            "path": "turbine.id"
           }
         },
         "yAxisFields": [
@@ -38,13 +30,7 @@
             },
   
             "entityId": "${id}",
-            "metricName": "gearOilTemperature",
-            "bindings": {
-              "value": {
-                "origin": 0,
-                "bound": 100
-              }
-            }
+            "metricName": "eventCount"
           }
         ]
       }

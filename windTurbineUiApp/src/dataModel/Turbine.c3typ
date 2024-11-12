@@ -1,4 +1,4 @@
-entity type Turbine schema name 'TRBN' {
+entity type Turbine mixes MetricEvaluatable schema name 'TRBN' {
     name: string
     latitude: float
     longitude: float

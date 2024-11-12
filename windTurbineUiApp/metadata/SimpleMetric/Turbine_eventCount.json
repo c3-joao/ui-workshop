@@ -1,0 +1,10 @@
+{
+    "id": "Turbine_eventCount",
+    "name": "eventCount",
+    "srcType": "Turbine",
+    "tsDecl": {
+        "data": "events",
+        "start": "time",
+        "treatment": "COUNT"
+    }
+}

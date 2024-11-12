@@ -4,7 +4,11 @@
     "display": "HORIZONTAL",
     "gridStyle": "FLUID",
     "fixedSize": "MEDIUM",
-    "pagePadding": 0,
+    "detachedFields": [
+      {
+        "id": "WindTurbine.TurbineSidePanel"
+      }
+    ],
     "children": [
       {
         "type": "UiSdlGridContainer",

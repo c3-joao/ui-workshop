@@ -10,6 +10,15 @@
         "closeIcon" : "times"
       },
       "sections" : [
+        {
+          "id": "WindTurbine.SidePanelSectionInfo"
+        },
+        {
+          "id": "WindTurbine.SidePanelSectionTemp"
+        },
+        {
+          "id": "WindTurbine.SidePanelSectionGrid"
+        }
       ],
       "triggersRegistered": true,
       "wrapWithMetadataId": true

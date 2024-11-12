@@ -1,0 +1,20 @@
+{
+  "type": "UiSdlConnected<UiSdlButton>",
+  "component": {
+    "usage": "link",
+    "size": "small",
+    "content": "All Work Orders"
+  },
+  "effectTriggers": [{
+    "trigger" : "WindTurbine.WorkOrderButton.BUTTON_CLICK",
+    "actions" : [
+      {
+        "type" : "GLOBAL_REDIRECT",
+        "payload": {
+          "url": "work-orders"
+        },
+        "payloadStrategy": "MERGE"
+      }
+    ]
+  }]
+}
