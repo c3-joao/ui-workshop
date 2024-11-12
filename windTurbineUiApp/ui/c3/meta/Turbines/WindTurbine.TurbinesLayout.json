@@ -7,10 +7,12 @@
     "children": [
       {
         "id": "WindTurbine.TurbinesTabPanel"
-      }
-      ,
+      },
       {
         "id":"WindTurbine.AddTurbineModal"
+      },
+      {
+        "id":"WindTurbine.DeleteTurbineConfirmationModal"
       }
     ]
   }

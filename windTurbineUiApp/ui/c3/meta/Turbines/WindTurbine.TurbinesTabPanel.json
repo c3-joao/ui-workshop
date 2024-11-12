@@ -12,9 +12,7 @@
           "id": "WindTurbine.HeatMapContainer",
           "title": "Heatmap"
         }
-      ],
-      "primaryActionButtonTitle": "Add Turbine",
-      "secondaryActionButtonTitle": "Delete Turbine"
+      ]
     }
   }
   

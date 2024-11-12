@@ -1,6 +1,5 @@
 {
   "type": "UiSdlConnected<UiSdlDataGrid>",
-
   "component": {
     "header": {
       "title": "Turbine"
@@ -10,6 +9,20 @@
       "pagination": true
     },
     "filterBar": true,
+    "tableActions": [
+      {
+        "type": "UiSdlActionGroup",
+        "name": "Add Turbine",
+        "iconSuffix": "plus",
+        "actionSuffix": "ADD_TURBINE"
+      }
+    ],
+    "rowActions": [
+      {
+        "actionSuffix": "DELETE_WITH_CONFIRMATION",
+        "iconSuffix": "trash-can"
+      }
+    ],
     "dataSpec": {
       "filter": "operationalStatus != 'Decommissioned'",
       "dataType": "Turbine",
@@ -47,6 +60,20 @@
       "payload" : {
         "applicationStateId" : "WindTurbine.UiSdlApplicationStateWT",
         "sidePanelId" : "WindTurbine.TurbineSidePanel"
+      }
+    },
+    {
+      "trigger": "WindTurbine.TurbinesGrid.TABLE_ACTION_CLICK_ADD_TURBINE",
+      "effectType": "UiSdlEpicShowUiSdlModal",
+      "payload": {
+        "modal": "WindTurbine.AddTurbineModal"
+      }
+    },
+    {
+      "trigger": "WindTurbine.TurbinesGrid.ROW_ACTION_CLICK_DELETE_WITH_CONFIRMATION",
+      "effectType": "UiSdlEpicShowUiSdlModal",
+      "payload": {
+        "modal": "WindTurbine.DeleteTurbineConfirmationModal"
       }
     }
   ]

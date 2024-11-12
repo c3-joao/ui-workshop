@@ -9,7 +9,7 @@
       },
       "modalType": {
         "type": "UiSdlTwoButtonModal",
-        "primaryButtonLabel": "Retrain",
+        "primaryButtonLabel": "Create",
         "primaryButtonStyle": "primary",
         "secondaryButtonLabel": "Cancel",
         "secondaryButtonStyle": "secondary"
@@ -21,13 +21,6 @@
       ]
     },
     "effectTriggers": [
-      {
-        "trigger": "WindTurbine.TurbinesTabPanel.ACTION_CLICK_PRIMARY",
-        "effectType": "UiSdlEpicShowUiSdlModal",
-        "payload": {
-          "modal": "WindTurbine.AddTurbineModal"
-        }
-      },
       {
         "trigger": "WindTurbine.AddTurbineModal.PRIMARY_BUTTON_CLICK",
         "actions": [

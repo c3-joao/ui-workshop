@@ -1,0 +1,29 @@
+{
+    "type" : "UiSdlConnected<UiSdlModal>",
+    "component" : {
+      "id": "WindTurbine.DeleteTurbineConfirmationModal",
+      "wrapWithMetadataId": true,
+      "header" : {
+        "text" : "Delete Turbine Confirmation"
+      },
+      "size" : "SMALL",
+      "modalType" : {
+        "type" : "UiSdlTwoButtonModal",
+        "primaryButtonLabel": "Delete",
+        "primaryButtonStyle": "danger",
+        "secondaryButtonLabel": "Cancel",
+        "secondaryButtonStyle": "secondary"
+      },
+      "content" : {
+        "type" : "UiSdlModalContentConfig",
+        "text" : "Are you sure you want to delete this turbine?"
+      }
+    },
+    "effectTriggers" : [ {
+      "trigger" : "WindTurbine.DeleteTurbineConfirmationModal.PRIMARY_BUTTON_CLICK",
+      "actions" : [ {
+        "type" : "WindTurbine.TurbinesGrid.ROW_ACTION_CLICK_DELETE"
+      } ]
+    } ]
+  }
+  

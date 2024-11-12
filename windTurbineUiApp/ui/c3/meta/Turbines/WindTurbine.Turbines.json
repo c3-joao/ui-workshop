@@ -17,6 +17,8 @@
       {
         "id": "WindTurbine.AddTurbineModal"
       }, {
+        "id": "WindTurbine.DeleteTurbineConfirmationModal"
+      }, {
         "id": "WindTurbine.UiSdlApplicationStateWT"
       }
     ]
