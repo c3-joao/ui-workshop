@@ -21,12 +21,12 @@
         "units": true
       },
       "dataSpec": {
-        "dataType": "WindTurbine",
+        "dataType": "Turbine",
         "contextVars": {
           "id": {
             "type": "UiSdlApplicationStateValueParam",
             "id": "WindTurbine.UiSdlApplicationStateWT",
-            "path": "pageId"
+            "path": "turbine.id"
           }
         },
         "yAxisFields": [

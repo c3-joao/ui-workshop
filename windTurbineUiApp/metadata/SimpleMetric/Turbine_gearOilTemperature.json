@@ -1,7 +1,7 @@
 {
-    "id": "WindTurbine_gearOilTemeprature",
+    "id": "Turbine_gearOilTemeprature",
     "name": "gearOilTemperature",
-    "srcType": "WindTurbine",
+    "srcType": "Turbine",
 
     "tsDecl": {
         "data": "measurements",

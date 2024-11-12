@@ -1,0 +1,10 @@
+{
+  "type": "UiSdlConnected<UiSdlSidePanelSection>",
+  "component": {
+    "children": [
+      {
+        "id": "WindTurbine.TurbineDefList"
+      }
+    ]
+  }
+}

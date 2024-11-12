@@ -11,7 +11,7 @@
       {
         "type" : "GLOBAL_REDIRECT",
         "payload": {
-          "url": "windturbine/workorders"
+          "url": "work-orders"
         },
         "payloadStrategy": "MERGE"
       }

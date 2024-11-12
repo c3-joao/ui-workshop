@@ -11,6 +11,12 @@
       },
       "sections" : [
         {
+          "id": "WindTurbine.SidePanelSectionInfo"
+        },
+        {
+          "id": "WindTurbine.SidePanelSectionTemp"
+        },
+        {
           "id": "WindTurbine.SidePanelSectionGrid"
         }
       ],
