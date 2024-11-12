@@ -28,10 +28,17 @@
           "modal": "WindTurbine.AddTurbineModal"
         }
       },
-      /* {
-        "trigger": "NavyStr.ModelDetailRetrainModal.PRIMARY_BUTTON_CLICK",
-        "effectType": "UiSdlEpicRetrainModel"
-      }, */
+      {
+        "trigger": "WindTurbine.AddTurbineModal.PRIMARY_BUTTON_CLICK",
+        "actions": [
+          {
+            "type": "WindTurbine.AddTurbineForm.VALIDATE_AND_SUBMIT"
+          },
+          {
+            "type": "WindTurbine.TurbinesGrid_dataSpec_ds.DATA_REQUEST"
+          }
+        ]
+      },
       {
         "trigger": "WindTurbine.AddTurbineModal.MODAL_CLOSE",
         "actions": [

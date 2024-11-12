@@ -5,9 +5,9 @@
     "wrapWithMetadataId": true,
     "hideFooterButtons": true,
     "submitDataSpec" : {
-      "dataType" : "WindTurbine",
+      "dataType" : "Turbine",
       "actionName" : "create",
-      "submitArgument" : "spec"
+      "submitArgument" : "this"
     },
     "clearOnCancel": true,
     "dataSpec": {
@@ -35,17 +35,12 @@
                 "inputElement": {
                   "dataSpec": {
                     "dataType": {
-                      "typeName": "WindTurbine"
+                      "typeName": "Model"
                     },
                     "actionName": "fetch",
-                    "args": {
-                      "spec": {
-                        "include": "manufacturer"
-                      }
-                    },
                     "dataPath": "objs",
-                    "valueField": "manufacturer",
-                    "displayField": "manufacturer",
+                    "valueField": "id",
+                    "displayField": "name",
                     "disableDataRequestOnFirstRender": false
                   },
                   "search": false,
@@ -58,9 +53,9 @@
                   "wrapWithMetadataId": false,
                   "type": "UiSdlSingleSearch"
                 },
-                "fieldName": "manufacturer",
+                "fieldName": "model",
                 "required": true,
-                "label": "Manufacturer",
+                "label": "Model",
                 "disabled": false,
                 "hidden": false
               },
@@ -71,22 +66,20 @@
                   "wrapWithMetadataId": false,
                   "max": "1000"
                 },
-                "fieldName": "power",
-                "label": "Max Power",
+                "fieldName": "latitude",
+                "label": "Latitude",
                 "disabled": false,
                 "hidden": false
               },
               {
                 "inputElement": {
-                  "type": "UiSdlDateTimeInput",
+                  "type": "UiSdlNumberInput",
                   "fluid": false,
-                  "allowKeyboardEdit": true,
-                  "showTimePicker": false,
-                  "wrapWithMetadataId": false
+                  "wrapWithMetadataId": false,
+                  "max": "1000"
                 },
-                "fieldName": "dateAdded",
-                "required": true,
-                "label": "Installation Date",
+                "fieldName": "longitude",
+                "label": "Longitude",
                 "disabled": false,
                 "hidden": false
               },
@@ -95,29 +88,17 @@
                   "type" : "UiSdlRadioButtonGroup",
                   "radioButtons" : [ 
                     {
-                      "value" : "SYSTEM_REBOOT",
-                      "label" : "System Reboot"
+                      "value" : "Decommissioned",
+                      "label" : "Decommissioned"
                     }, 
                     {
-                      "value" : "DIAGNOSTICS_COMPLETE",
-                      "label" : "Diagnostics Complete"
-                    }, 
-                    {
-                      "value" : "PLANNED_MAINTENANCE",
-                      "label" : "Planned Maintenance"
-                    }, 
-                    {
-                      "value" : "UNPLANNED_MAINTENANCE",
-                      "label" : "Unplanned Maintenance"
-                    }, 
-                    {
-                      "value" : "SYSTEM_OVERLOAD",
-                      "label" : "System Overload"
-                    } 
+                      "value" : "Operational",
+                      "label" : "Operational"
+                    }
                   ]
                 },
-                "label" : "Most Recent Event",
-                "fieldName" : "status"
+                "label" : "Operational Status",
+                "fieldName" : "operationStatus"
               }
             ]
           }
