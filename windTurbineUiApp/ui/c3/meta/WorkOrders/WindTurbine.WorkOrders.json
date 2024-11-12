@@ -9,6 +9,7 @@
     "children": [
       {
         "type": "UiSdlComponentContainer",
+        "column": 3,
         "stretch": false,
         "childComponent": {
           "id": "WindTurbine.WorkOrdersFilterPanel"
@@ -16,6 +17,7 @@
       },
       {
         "type": "UiSdlComponentContainer",
+        "column": 9,
         "childComponent": {
           "id": "WindTurbine.WorkOrdersGrid"
         }
