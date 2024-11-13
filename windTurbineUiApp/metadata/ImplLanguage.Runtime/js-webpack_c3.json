@@ -1,6 +1,8 @@
 {
   "name": "js-webpack_c3",
   "libraries": [
-    "npm react-heatmap-grid@0.8.1"
+    "npm react-heatmap-grid@0.8.1",
+    "npm react-sortable-hoc@2.0.0",
+    "npm array-move@4.00"
   ]
 }

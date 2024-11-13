@@ -10,7 +10,7 @@
           "title": "Map"
         }, {
           "id": "WindTurbine.HeatMapContainer",
-          "title": "Heatmap"
+          "title": "Sortable List"
         }
       ]
     }

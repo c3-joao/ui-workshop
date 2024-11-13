@@ -9,20 +9,14 @@
     "children": [
       {
         "type": "UiSdlGridContainer",
-        "column": 3,
-        "background": "AUTO",
-        "children": ["WindTurbine.TurbineHeatMapFilterPanel"]
-      },
-      {
-        "type": "UiSdlGridContainer",
-        "column": 9,
+        "column": 12,
         "background": "AUTO",
         "display": "VERTICAL",
         "children": [
           {
             "padding": 16,
             "childComponent": {
-              "id": "WindTurbine.HeatMap"
+              "id": "WindTurbine.DraggableList"
             }
           }
         ]
