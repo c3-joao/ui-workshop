@@ -1,0 +1,14 @@
+{
+    "id": "WindTurbine_gearOilTemeprature",
+    "name": "gearOilTemperature",
+    "srcType": "WindTurbine",
+
+    "tsDecl": {
+        "data": "measurements",
+        "start": "timestamp",
+        "treatment": "RATE",
+        "overlapHandling": "AVG",
+        "rollupFunc": "AVG",
+        "value": "gearOilTemperature"
+    }
+}

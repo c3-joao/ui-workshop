@@ -1,10 +1,10 @@
 {
   "type": "UiSdlConnected<UiSdlGridLayout>",
   "component": {
-    "display": "HORIZONTAL",
     "gridStyle": "FLUID",
+    "display": "HORIZONTAL",
     "navMenu": {
-      "id": "WindTurbine.NavMenu",
+      "id": "WindTurbine.NavMenu"
     },
     "children": [
       {
@@ -19,8 +19,12 @@
         "type": "UiSdlGridContainer",
         "background": "AUTO",
         "column": 9,
-        "children": [
-          "WindTurbine.WorkOrdersGrid"
+        "children": [{
+          "type": "UiSdlComponentContainer",
+          "stretch": false,
+          "childComponent": {
+            "id": "WindTurbine.WorkOrdersGrid"
+          }
         ]
       },
     ]

@@ -1,16 +1,14 @@
 {
   "type": "UiSdlConnected<UiSdlDataGrid>",
-
   "component": {
     "header": {
       "title": "Work Orders"
     },
+    "filterBar": true,
     "paginationConfig": {
       "pageSize": 30,
       "pagination": true
     },
-    "reorderableColumns": true,
-    "filterBar": true,
     "dataSpec": {
       "contextVars": {
         "turbine": {
@@ -30,39 +28,32 @@
         },
         {
           "fieldName": "description",
-          "label": "Description",
-          "sortable": true,
-          "searchable": true
+          "label": "Description"
         },
         {
           "fieldName": "priority",
           "label": "Priority",
-          "sortable": true,
-          "searchable": true
+          "sortable": true
         },
         {
           "fieldName": "workOrderStatus",
           "label": "Status",
-          "sortable": true,
-          "searchable": true
+          "sortable": true
         },
         {
           "fieldName": "plannedStartDate",
           "label": "Planned Start Date",
-          "sortable": true,
-          "searchable": true
+          "sortable": true
         },
         {
           "fieldName": "plannedEndDate",
           "label": "Planned End Date",
-          "sortable": true,
-          "searchable": true
+          "sortable": true
         },
         {
           "fieldName": "actualCompletionDate",
           "label": "Actual Completion Date",
-          "sortable": true,
-          "searchable": true
+          "sortable": true
         }
       ]
     }

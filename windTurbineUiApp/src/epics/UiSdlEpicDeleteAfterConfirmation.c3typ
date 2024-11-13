@@ -1,4 +1,0 @@
-@typeScript(sourceCodeType="Module")
-type UiSdlEpicDeleteAfterConfirmation mixes UiSdlEpic {
-epic: ~ ts-client
-}

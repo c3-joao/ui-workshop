@@ -12,38 +12,6 @@
           "fields": [
             {
               "type": "UiSdlFieldSetFilterFieldSetting",
-              "fieldName": "title",
-              "label": "Title",
-              "componentsToFilterMapping": {
-                "value": {
-                  "WindTurbine.WorkOrdersGrid": {
-                    "WorkOrder": "title"
-                  }
-                }
-              },
-              "filterElement": {
-                "type": "UiSdlMultipleSearchFilterField",
-                "inputElement": {
-                  "serverSearch": true,
-                  "clear": true,
-                  "fluid": true,
-                  "dataSpec": {
-                    "dataType": "WorkOrder",
-                    "actionName": "fetch",
-                    "args": {
-                      "spec": {
-                        "include": "title"
-                      }
-                    },
-                    "dataTransforms": ["UiSdlTransformFetchResultToArray"]
-                  },
-                  "valueField": "title",
-                  "displayField": "title"
-                }
-              }
-            },
-            {
-              "type": "UiSdlFieldSetFilterFieldSetting",
               "fieldName": "priority",
               "label" : "Priority",
               "componentsToFilterMapping": {
@@ -54,11 +22,10 @@
                 }
               },
               "filterElement": {
-                "type": "UiSdlCheckboxTreeFilterField",
-                "infoTooltipText": "Filter by work order priority level",
+                "type": "UiSdlRadioButtonGroupFilterField",
                 "inputElement" : {
-                  "type" : "UiSdlCheckboxTree",
-                  "nodes" : [ {
+                  "clear" : true,
+                  "radioButtons" : [ {
                     "label" : "Low",
                     "value" : "Low"
                   }, {
@@ -87,6 +54,7 @@
                 "infoTooltipText": "Filter by work order status",
                 "inputElement" : {
                   "type" : "UiSdlCheckboxTree",
+                  "clear" : true,
                   "nodes" : [ {
                     "label" : "Open",
                     "value" : "Open"
@@ -97,6 +65,25 @@
                     "label" : "Completed",
                     "value" : "Completed"
                   } ]
+                }
+              }
+            },
+            {
+              "type": "UiSdlFieldSetFilterFieldSetting",
+              "fieldName": "plannedStartDate",
+              "label": "Planned Start Date",
+              "componentsToFilterMapping": {
+                "value": {
+                  "WindTurbine.WorkOrdersGrid": {
+                    "WorkOrder": "plannedStartDate"
+                  }
+                }
+              },
+              "filterElement": {
+                "type": "UiSdlDateTimeInputFilterField",
+                "inputElement": {
+                  "placeholder": "Choose a date",
+                  "showTimePicker": false
                 }
               }
             }

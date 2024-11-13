@@ -1,4 +1,0 @@
-@typeScript(sourceCodeType="Module")
-type UiSdlEpicDeleteTurbineEvent mixes UiSdlEpic {
-epic: ~ ts-client
-}

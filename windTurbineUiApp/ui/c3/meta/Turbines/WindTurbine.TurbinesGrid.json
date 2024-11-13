@@ -1,8 +1,9 @@
 {
   "type": "UiSdlConnected<UiSdlDataGrid>",
   "component": {
+    "wrapWithMetadataId": true,
     "header": {
-      "title": "Turbine"
+      "title": "Turbines"
     },
     "paginationConfig": {
       "pageSize": 10,
@@ -58,7 +59,7 @@
       "effectType" : "UiSdlEpicOpenSidePanel",
       "payloadStrategy" : "MERGE",
       "payload" : {
-        "applicationStateId" : "WindTurbine.UiSdlApplicationStateWT",
+        "applicationStateId" : "WindTurbine.ApplicationState",
         "sidePanelId" : "WindTurbine.TurbineSidePanel"
       }
     },
