@@ -1,4 +1,3 @@
-
 **/jsconfig.json
 .vs-cache
 **/.fingerprints.txt
@@ -6,3 +5,4 @@
 **/gen/cache/**
 .c3nbrc.js
 tsconfig.json
+.DS_Store
