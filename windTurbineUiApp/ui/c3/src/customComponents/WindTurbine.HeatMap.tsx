@@ -10,6 +10,7 @@ const WindTurbineHeatMap = () => {
   const [data, setData] = useState(undefined);
   const [turbines, setTurbines] = useState(undefined);
 
+  /* OPTIONAL START */
   // Used for making filter
   const turbineFilter = useSelector((state) => {
     return getConfigFromApplicationState(
@@ -26,6 +27,7 @@ const WindTurbineHeatMap = () => {
       ["eventFilter"]
     );
   });
+  /* OPTIONAL END */
 
   // useEffect for data fetching
   useEffect(
@@ -34,17 +36,23 @@ const WindTurbineHeatMap = () => {
         const url = `api/8/TurbineEvent/fetch`;
         const turbines = await axios.post(`api/8/Turbine/fetch`, [
           "Turbine",
-          { filter: turbineFilter },
+          /* OPTIONAL START */ { filter: turbineFilter }, /* OPTIONAL END */
         ]);
+
+        /* OPTIONAL START */
         // After fetching Turbines, use only the turbines we get back to fetch TurbineEvents
         const turbineIds = turbines.data.objs?.map((turbine) => turbine.id) || [];
+        /* OPTIONAL END */
+
         const response = await axios.post(url, [
           "TurbineEvent",
+          /* OPTIONAL START */
           {
             filter: `intersects(windturbine, ${JSON.stringify(
               turbineIds
             )}) && ${eventFilter ?? "1 == 1"}`,
           },
+          /* OPTIONAL END */
         ]);
 
         return { events: response.data.objs, turbines: turbines.data.objs };
@@ -55,7 +63,7 @@ const WindTurbineHeatMap = () => {
         setTurbines(fetchResult.turbines);
       });
     },
-    [turbineFilter, eventFilter]
+    [/* OPTIONAL START */ turbineFilter, eventFilter /* OPTIONAL END */]
   );
 
   if (data) {
@@ -132,6 +140,7 @@ const WindTurbineHeatMap = () => {
         finalData.push(turbineData);
       }
 
+      /* OPTIONAL START */
       // handle click currently does nothing
       const handleClick = (x, y) => {
         console.log(xLabels[x], yLabels[y]);
@@ -157,9 +166,11 @@ const WindTurbineHeatMap = () => {
           />
         );
       };
+      /* OPTIONAL END */
 
       return (
         <div>
+          {/* OPTIONAL START */}
           <h2>
             {" "}
             Heat Map of{" "}
@@ -175,7 +186,10 @@ const WindTurbineHeatMap = () => {
               : "All "}
             Events{" "}
           </h2>
+          {/* OPTIONAL END */}
+
           <HeatMap
+            /* OPTIONAL START */
             yLabelWidth={150}
             xLabelWidth={0}
             onClick={handleClick}
@@ -185,10 +199,11 @@ const WindTurbineHeatMap = () => {
               border: "var(--c3-style-colorBorderWeak) solid 1px",
               background: `rgba(255, 0, 0, ${1 - (max - value) / (max - min)})`,
             })}
+            cellRender={renderCell}
+            /* OPTIONAL END */
             xLabels={xLabels}
             yLabels={yLabels}
             data={finalData}
-            cellRender={renderCell}
           />
         </div>
       );
