@@ -8,19 +8,24 @@
     },
     "children": [
       {
-        "type": "UiSdlComponentContainer",
+        "type": "UiSdlGridContainer",
         "column": 3,
-        "stretch": false,
-        "childComponent": {
-          "id": "WindTurbine.WorkOrdersFilterPanel"
-        }
+        "background": "AUTO",
+        "children": [
+          "WindTurbine.WorkOrdersFilterPanel"
+        ]
       },
       {
-        "type": "UiSdlComponentContainer",
+        "type": "UiSdlGridContainer",
+        "background": "AUTO",
         "column": 9,
-        "childComponent": {
-          "id": "WindTurbine.WorkOrdersGrid"
-        }
+        "children": [{
+          "type": "UiSdlComponentContainer",
+          "stretch": false,
+          "childComponent": {
+            "id": "WindTurbine.WorkOrdersGrid"
+          }
+        ]
       },
     ]
   }

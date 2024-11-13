@@ -1,0 +1,8 @@
+/**
+* Enter the Type purposes and use cases with code examples.
+*/
+
+@typeScript
+type WindTurbineWorkOrderRedirectEpic mixes UiSdlEpic {
+  epic: ~ ts-client
+}

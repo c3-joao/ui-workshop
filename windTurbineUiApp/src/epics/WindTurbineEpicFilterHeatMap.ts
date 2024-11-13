@@ -15,7 +15,7 @@ export function epic(actionStream, stateStream) {
       let turbineFilter = new Filter('1 == 1');
       let eventFilter = new Filter('1 == 1');
       Object.keys(fields).forEach((field) => {
-        if (field !== 'event_code') {
+        if (field !== 'eventType') {
           if (fields[field].value) {
             const operator = fields[field].operator;
             if (operator === 'EQUALS') {
