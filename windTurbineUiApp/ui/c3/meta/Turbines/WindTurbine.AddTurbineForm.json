@@ -41,7 +41,7 @@
                     "actionName": "fetch",
                     "dataPath": "objs",
                     "valueField": "id",
-                    "displayField": "name",
+                    "displayField": "modelName",
                     "disableDataRequestOnFirstRender": false
                   },
                   "search": false,
@@ -99,7 +99,7 @@
                   ]
                 },
                 "label" : "Operational Status",
-                "fieldName" : "operationStatus"
+                "fieldName" : "operationalStatus"
               }
             ]
           }
