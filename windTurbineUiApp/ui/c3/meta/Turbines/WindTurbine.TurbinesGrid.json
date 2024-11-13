@@ -58,7 +58,7 @@
       "effectType" : "UiSdlEpicOpenSidePanel",
       "payloadStrategy" : "MERGE",
       "payload" : {
-        "applicationStateId" : "WindTurbine.UiSdlApplicationStateWT",
+        "applicationStateId" : "WindTurbine.ApplicationState",
         "sidePanelId" : "WindTurbine.TurbineSidePanel"
       }
     },

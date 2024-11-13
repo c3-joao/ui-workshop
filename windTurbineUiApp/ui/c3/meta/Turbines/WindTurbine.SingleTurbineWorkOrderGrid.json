@@ -16,7 +16,7 @@
       "contextVars": {
         "windturbine": {
           "type": "UiSdlApplicationStateValueParam",
-          "id": "WindTurbine.UiSdlApplicationStateWT",
+          "id": "WindTurbine.ApplicationState",
           "path": "turbine.id"
         }
       },

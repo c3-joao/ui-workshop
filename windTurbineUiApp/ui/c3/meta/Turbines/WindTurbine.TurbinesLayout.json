@@ -1,7 +1,7 @@
 {
   "type": "UiSdlConnected<UiSdlLayoutSidePanel>",
   "applicationStateRef": {
-    "id":"WindTurbine.UiSdlApplicationStateWT"
+    "id":"WindTurbine.ApplicationState"
 },
   "component": {
     "children": [

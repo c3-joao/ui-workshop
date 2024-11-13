@@ -1,4 +1,0 @@
-@typeScript
-type UiSdlEpicUpdateChart mixes UiSdlEpic {
-epic: ~ ts-client
-}
