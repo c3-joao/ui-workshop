@@ -1,6 +1,7 @@
 {
   "type": "UiSdlConnected<UiSdlDataGrid>",
   "component": {
+    "wrapWithMetadataId": true,
     "header": {
       "title": "Turbines"
     },
