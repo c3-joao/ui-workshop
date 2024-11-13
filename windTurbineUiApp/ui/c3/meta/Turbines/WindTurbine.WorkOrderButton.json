@@ -3,7 +3,9 @@
   "component": {
     "usage": "link",
     "size": "small",
-    "content": "All Work Orders"
+    "content": {
+      "dynamicValue": "All work orders"
+    }
   },
   "effectTriggers": [{
     "trigger" : "WindTurbine.WorkOrderButton.BUTTON_CLICK",
