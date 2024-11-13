@@ -13,14 +13,14 @@ export function epic(actionStream, _stateStream) {
         return concat(
           of(
             mergeArgumentsAction(
-              "WindTurbine.TurbineMapFilterPanel_dataSpec_fieldSets_1_fields_1_filterElement_inputElement_dataSpec_ds",
+              `${payload.componentId}_dataSpec_fieldSets_1_fields_1_filterElement_inputElement_dataSpec_ds`,
               { spec: { filter: payload?.value?.value ? `intersects(model.manufacturer.name, ${JSON.stringify(payload.value.value)})`: "" } },
               payload.componentId
             )
           ),
           of(
             requestDataAction(
-              "WindTurbine.TurbineMapFilterPanel_dataSpec_fieldSets_1_fields_1_filterElement_inputElement_dataSpec_ds"
+              `${payload.componentId}_dataSpec_fieldSets_1_fields_1_filterElement_inputElement_dataSpec_ds`
             )
           )
         );

@@ -10,7 +10,8 @@
         "name": "Date"
       },
       "yAxis": {
-        "name": "Number of events"
+        "name": "Number of events",
+        "units": false
       },
       "dataSpec": {
         "dataType": "Turbine",

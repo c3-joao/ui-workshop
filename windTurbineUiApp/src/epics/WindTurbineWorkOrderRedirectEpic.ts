@@ -10,7 +10,7 @@ export function epic(actionStream, stateStream) {
   return actionStream.pipe(
     //change from map to mergeMap if triggering multiple actions
     mergeMap(function (action) {
-      const turbine = getConfigFromApplicationState('WindTurbine.UiSdlApplicationStateWT', stateStream.value, ['turbine', 'id']);
+      const turbine = getConfigFromApplicationState('WindTurbine.ApplicationState', stateStream.value, ['turbine', 'id']);
       return of({
         "type" : "GLOBAL_REDIRECT",
         "payload": {
