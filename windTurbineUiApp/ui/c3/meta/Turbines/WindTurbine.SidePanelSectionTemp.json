@@ -1,7 +1,7 @@
 {
   "type": "UiSdlConnected<UiSdlSidePanelSection>",
   "component": {
-    "title": "Turbine Temperature",
+    "title": "Turbine Events",
     "children": [
       {
         "id": "WindTurbine.TurbineAverageTempChart"

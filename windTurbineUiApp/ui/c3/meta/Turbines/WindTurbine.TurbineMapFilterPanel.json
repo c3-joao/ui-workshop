@@ -11,68 +11,44 @@
           "title" : "Location",
           "collapsed" : false,
           "fields" : [ {
-            "type" : "UiSdlFieldSetFilterFieldSetting",
-            "fieldName" : "country",
-            "label" : "Country",
-            "componentsToFilterMapping" : {
-              "value" : {
-                "WindTurbine.TurbinesMap" : {
-                  "WindTurbine" : "country"
+            "type": "UiSdlFieldSetFilterFieldSetting",
+            "fieldName": "latitude",
+            "label": "Latitude",
+            "componentsToFilterMapping": {
+              "value": {
+                "WindTurbine.TurbinesMap": {
+                  "Turbine": "latitude"
                 }
               }
             },
-            "filterElement" : {
-              "type" : "UiSdlSingleSearchFilterField",
-              "inputElement" : {
-                "clear" : true,
-                "fluid" : true,
-                "placeholder" : "Country",
-                "dataSpec" : {
-                  "dataType" : "WindTurbine",
-                  "actionName" : "fetch",
-                  "args" : {
-                    "spec" : {
-                      "include" : "id, country, city"
-                    }
-                  },
-                  "dataTransforms" : [ "UiSdlTransformFetchResultToArray" ]
-                },
-                "valueField" : "country",
-                "displayField" : "country"
+            "filterElement": {
+              "type": "UiSdlNumberRangeInputFilterField",
+              "inputElement": {
+                "min": 30,
+                "max": 50,
+                "markStep": 5
               }
             }
           }, {
-            "type" : "UiSdlFieldSetFilterFieldSetting",
-            "fieldName" : "city",
-            "label" : "City",
-            "componentsToFilterMapping" : {
-              "value" : {
-                "WindTurbine.TurbinesMap" : {
-                  "WindTurbine" : "city"
+            "type": "UiSdlFieldSetFilterFieldSetting",
+            "fieldName": "longitude",
+            "label": "Longitude",
+            "componentsToFilterMapping": {
+              "value": {
+                "WindTurbine.TurbinesMap": {
+                  "Turbine": "longitude"
                 }
               }
             },
-            "filterElement" : {
-              "type" : "UiSdlSelectInputFilterField",
-              "inputElement" : {
-                "clear" : true,
-                "fluid" : true,
-                "placeholder" : "City",
-                "dataSpec" : {
-                  "dataType" : "WindTurbine",
-                  "actionName" : "fetch",
-                  "args" : {
-                    "spec" : {
-                      "include" : "id, country, city"
-                    }
-                  },
-                  "dataPath" : "objs",
-                  "valueField" : "city",
-                  "displayField" : "city"
-                }
+            "filterElement": {
+              "type": "UiSdlNumberRangeInputFilterField",
+              "inputElement": {
+                "min": -120,
+                "max": 20,
+                "markStep": 20
               }
             }
-          } ]
+          }]
         },
         {
           "title": "Make",
@@ -80,45 +56,44 @@
             {
               "type": "UiSdlFieldSetFilterFieldSetting",
               "label": "Manufacturer",
-              "fieldName": "manufacturer",
+              "fieldName": "model.manufacturer.name",
               "filterElement": {
                 "type": "UiSdlMultipleSearchFilterField",
                 "inputElement": {
                   "serverSearch": false,
-                  // "optionsLimit": 5,
                   "clear": true,
                   "fluid": true,
                   "placeholder": "Manufacturer",
                   "dataSpec": {
-                    "dataType": "WindTurbine",
+                    "dataType": "Turbine",
                     "actionName": "fetch",
                     "args": {
                       "spec": {
-                        "include": "manufacturer"
+                        "include": "model.manufacturer.name"
                       }
                     },
                     "dataTransforms": ["UiSdlTransformFetchResultToArray"]
                   },
-                  "valueField": "manufacturer",
-                  "displayField": "manufacturer"
+                  "valueField": "model.manufacturer.name",
+                  "displayField": "model.manufacturer.name"
                 }
               },
               "componentsToFilterMapping": {
                 "value": {
                   "WindTurbine.TurbinesMap": {
-                    "WindTurbine": "manufacturer"
+                    "Turbine": "model.manufacturer.name"
                   }
                 }
               }
             },
             {
               "type": "UiSdlFieldSetFilterFieldSetting",
-              "fieldName": "facility",
-              "label": "Facility",
+              "fieldName": "model.modelName",
+              "label": "Model",
               "componentsToFilterMapping": {
                 "value": {
                   "WindTurbine.TurbinesMap": {
-                    "WindTurbine": "facility"
+                    "WindTurbine": "model.modelName"
                   }
                 }
               },
@@ -127,49 +102,24 @@
                 "inputElement": {
                   "clear": true,
                   "fluid": true,
-                  "placeholder": "Facility",
+                  "placeholder": "Model",
                   "dataSpec": {
-                    "dataType": "WindTurbine",
+                    "dataType": "Turbine",
                     "actionName": "fetch",
                     "args": {
                       "spec": {
-                        "include": "facility"
+                        "include": "model.modelName, model.manufacturer"
                       }
                     },
                     "dataPath": "objs",
-                    "valueField": "facility",
-                    "displayField": "facility"
+                    "valueField": "model.modelName",
+                    "displayField": "model.modelName"
                   }
                 }
               }
             }
           ]
         },
-        {
-          "title": "Specs",
-          "fields": [
-            {
-              "type": "UiSdlFieldSetFilterFieldSetting",
-              "fieldName": "power",
-              "label": "Power",
-              "componentsToFilterMapping": {
-                "value": {
-                  "WindTurbine.TurbinesMap": {
-                    "WindTurbine": "power"
-                  }
-                }
-              },
-              "filterElement": {
-                "type": "UiSdlNumberRangeInputFilterField",
-                "inputElement": {
-                  "min": 0,
-                  "max": 300,
-                  "markStep": 50
-                }
-              }
-            },
-          ]
-        }
       ]
     }
   }, 

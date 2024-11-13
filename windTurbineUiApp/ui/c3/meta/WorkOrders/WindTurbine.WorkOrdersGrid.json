@@ -12,6 +12,14 @@
     "reorderableColumns": true,
     "filterBar": true,
     "dataSpec": {
+      "contextVars": {
+        "turbine": {
+          "type": "UiSdlPageParam",
+          "path": "turbine"
+        }
+      },
+      "disableContextVarsFilter": true,
+      "filter": "contains(windturbine.id,\"${turbine}\")",
       "dataType": "WorkOrder",
       "columnFields": [
         {

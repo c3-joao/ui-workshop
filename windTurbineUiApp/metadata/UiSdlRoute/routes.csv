@@ -2,3 +2,4 @@ targetModuleName,targetPageName,name,urlPath
 WindTurbine,Turbines,/,/
 WindTurbine,Turbines,/windturbines,/windturbines
 WindTurbine,WorkOrders,/work-orders,/work-orders
+WindTurbine,WorkOrders,/work-orders/{{turbine}},/work-orders/{{turbine}}

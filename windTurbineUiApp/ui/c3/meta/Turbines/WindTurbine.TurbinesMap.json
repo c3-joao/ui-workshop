@@ -36,7 +36,7 @@
             }
           ],
           "markerColor": {
-            "fieldName": "lastEvent.eventType",
+            "fieldName": "latestEvent",
             "colorConfigurationStrategy": {
               "type": "UiSdlMapMarkerCategoricalColorSetting",
               "categoryColors": [

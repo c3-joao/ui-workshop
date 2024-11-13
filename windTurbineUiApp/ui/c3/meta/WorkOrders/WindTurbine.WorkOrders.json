@@ -8,20 +8,20 @@
     },
     "children": [
       {
-        "type": "UiSdlComponentContainer",
+        "type": "UiSdlGridContainer",
         "column": 3,
         "background": "AUTO",
-        "childComponent": {
-          "id": "WindTurbine.WorkOrdersFilterPanel"
-        }
+        "children": [
+          "WindTurbine.WorkOrdersFilterPanel"
+        ]
       },
       {
-        "type": "UiSdlComponentContainer",
+        "type": "UiSdlGridContainer",
         "background": "AUTO",
         "column": 9,
-        "childComponent": {
-          "id": "WindTurbine.WorkOrdersGrid"
-        }
+        "children": [
+          "WindTurbine.WorkOrdersGrid"
+        ]
       },
     ]
   }

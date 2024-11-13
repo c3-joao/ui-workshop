@@ -9,18 +9,18 @@ export function epic(actionStream, _stateStream) {
     //change from map to mergeMap if triggering multiple actions
     mergeMap(function (action) {
       const payload = action.payload;
-      if (payload?.value?.field === "country") {
+      if (payload?.value?.field === "model.manufacturer.name") {
         return concat(
           of(
             mergeArgumentsAction(
-              "WindTurbine.TurbineMapFilterPanel_dataSpec_fieldSets_0_fields_1_filterElement_inputElement_dataSpec_ds",
-              { spec: { filter: payload?.value?.value ? `country == "${payload.value.value}"`: "" } },
+              "WindTurbine.TurbineMapFilterPanel_dataSpec_fieldSets_1_fields_1_filterElement_inputElement_dataSpec_ds",
+              { spec: { filter: payload?.value?.value ? `intersects(model.manufacturer.name, ${JSON.stringify(payload.value.value)})`: "" } },
               payload.componentId
             )
           ),
           of(
             requestDataAction(
-              "WindTurbine.TurbineMapFilterPanel_dataSpec_fieldSets_0_fields_1_filterElement_inputElement_dataSpec_ds"
+              "WindTurbine.TurbineMapFilterPanel_dataSpec_fieldSets_1_fields_1_filterElement_inputElement_dataSpec_ds"
             )
           )
         );
