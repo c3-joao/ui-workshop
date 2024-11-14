@@ -8,7 +8,7 @@
           "id": "WindTurbine.TurbinesMapContainer",
           "title": "Map"
         }, {
-          "id": "WindTurbine.HeatMapContainer",
+          "id": "WindTurbine.DraggableListContainer",
           "title": "Sortable List"
         }
       ]
