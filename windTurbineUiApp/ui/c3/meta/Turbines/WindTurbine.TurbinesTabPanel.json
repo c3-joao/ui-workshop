@@ -2,7 +2,6 @@
     "type": "UiSdlConnected<UiSdlTabPanel>",
     "component": {
       "id": "WindTurbine.TurbinesTabPanel",
-      "wrapWithMetadataId": true,
       "activeTab": "WindTurbine.TurbinesMapContainer",
       "tabComponents": [
         {

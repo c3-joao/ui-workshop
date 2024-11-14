@@ -2,7 +2,6 @@
     "type" : "UiSdlConnected<UiSdlModal>",
     "component" : {
       "id": "WindTurbine.DeleteTurbineConfirmationModal",
-      "wrapWithMetadataId": true,
       "header" : {
         "text" : "Delete Turbine Confirmation"
       },
