@@ -4,6 +4,6 @@
   "version": "0.0.1",
   "author": "C3 AI",
   "dependencies": {
-    "uiComponentLibraryReact": "8.4.0"
+    "uiComponentLibraryReact": ">=8.4.0"
   }
 }
