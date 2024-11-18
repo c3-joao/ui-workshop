@@ -29,7 +29,6 @@
               "lineStyle": "Solid",
               "itemStyle": "CIRCLE"
             },
-  
             "entityId": "${id}",
             "metricName": "eventCount"
           }
