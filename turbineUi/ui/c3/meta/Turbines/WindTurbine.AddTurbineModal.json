@@ -14,34 +14,7 @@
         "secondaryButtonStyle": "secondary"
       },
       "children": [
-        {
-            "id": "WindTurbine.AddTurbineForm"
-        }
       ]
-    },
-    "effectTriggers": [
-      {
-        "trigger": "WindTurbine.AddTurbineModal.PRIMARY_BUTTON_CLICK",
-        "actions": [
-          {
-            "type": "WindTurbine.AddTurbineForm.VALIDATE_AND_SUBMIT"
-          },
-          {
-            "type": "WindTurbine.TurbinesGrid_dataSpec_ds.DATA_REQUEST"
-          }
-        ]
-      },
-      {
-        "trigger": "WindTurbine.AddTurbineModal.MODAL_CLOSE",
-        "actions": [
-          {
-            "type": "WindTurbine.AddTurbineForm.FORM_CANCEL"
-          },
-          {
-            "type": "WindTurbine.AddTurbineForm.FORM_RESET"
-          }
-        ]
-      }
-    ]
+    }
   }
   

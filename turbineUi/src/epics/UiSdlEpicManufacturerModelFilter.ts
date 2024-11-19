@@ -1,7 +1,6 @@
 import { concat, of, EMPTY } from "rxjs"; //import concat and of if triggering multiple actions
 import { mergeMap } from "rxjs/operators"; //import mergeMap instead of map if triggering multiple actions
 import { mergeArgumentsAction, requestDataAction } from "@c3/ui/UiSdlDataRedux";
-import DateTime from "@c3/ui/UiSdlDateTime";
 
 export function epic(actionStream, _stateStream) {
   var startDate, endDate;

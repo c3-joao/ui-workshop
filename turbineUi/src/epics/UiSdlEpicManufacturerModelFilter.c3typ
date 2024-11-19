@@ -1,4 +1,4 @@
 @typeScript(sourceCodeType="Module")
-type WindTurbineEpicUpdateCity mixes UiSdlEpic {
+type UiSdlEpicManufacturerModelFilter mixes UiSdlEpic {
 epic: ~ ts-client
 }
