@@ -18,11 +18,7 @@ export function epic(
 ): UiSdlActionsObservable {
   return actionStream.pipe(
     flatMap(function (action) {
-      const applicationStateId = action.payload?.applicationStateId;
-      const sidePanelId = action.payload?.sidePanelId;
-      const obj = action.payload?.dataItem?.obj;
 
-      return concat(of(storeRowRecordAction(applicationStateId, obj)), of(openCloseSidePanelAction(sidePanelId, true)));
     })
   );
 }
